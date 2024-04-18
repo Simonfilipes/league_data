@@ -27,14 +27,14 @@
 /*works janky on mobile :<*/
 .container {
     position: relative;
-    width: 100%;
+    width: 250px;
     height: 300px;
     transition: 200ms;
     margin: -10px;
   }
   
   .container:active {
-    width: 95%;
+    width: 230px;
     height: 290px;
   }
   
