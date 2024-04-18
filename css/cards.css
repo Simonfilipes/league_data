@@ -9,12 +9,12 @@
 
 
 .div_cartas{
-  margin: 100px;
+  margin: 70px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
-  gap: 150px
+  gap: 130px
 }
 
 .flip-card-back{
@@ -29,15 +29,15 @@
 /*works janky on mobile :<*/
 .container {
     position: relative;
-    width: 320px;
-    height: 400px;
+    width: 300px;
+    height: 380px;
     transition: 200ms;
     margin: -10px;
   }
   
   .container:active {
-    width: 230px;
-    height: 290px;
+    width: 270px;
+    height: 360px;
   }
   
   #card {
@@ -68,7 +68,7 @@
     font-size: x-large;
     font-weight: bold;
     color: white;
-    font-size: 15px;
+    font-size: 20px;
   }
   
   .tracker:hover ~ #card .title {
