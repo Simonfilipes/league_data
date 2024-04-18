@@ -14,7 +14,7 @@
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
-  gap: 290px;
+  gap: 150px
 }
 
 .flip-card-back{
@@ -29,8 +29,8 @@
 /*works janky on mobile :<*/
 .container {
     position: relative;
-    width: 250px;
-    height: 300px;
+    width: 320px;
+    height: 400px;
     transition: 200ms;
     margin: -10px;
   }
