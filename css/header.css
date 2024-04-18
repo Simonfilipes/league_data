@@ -94,4 +94,28 @@ nav a:hover{
     /* transform: translateY(-30px); */
     transition-duration: 0.3s;
   }
+
+  @media screen and (max-width: 910px) { 
+    nav{
+      display: flex;
+      flex-direction: row;
+      gap: 100px;
+  }
+  }
+
+  @media screen and (max-width: 700px) { 
+    nav{
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+  }
+  }
+
+  @media screen and (max-width: 570px){
+    nav{
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+  }
+}
   
