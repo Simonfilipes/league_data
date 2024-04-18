@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="cards.css">
+  <link rel="stylesheet" href="button_1.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <title>Document</title>
 </head>
@@ -25,7 +26,7 @@
         <h1>BEM VINDO AO <span id="spam_1">LEAGUE DATA</span><br> O <span>LEAGUE OF LEGENDS</span> NA <br>PALMA DE SUA
           MÃO</h1>
 
-        <button id="button_1"><a href="#titulo">Conhecer as funções do site</a></button>
+          <button class="button"><span class="button_lg"><span class="button_sl"></span><span class="button_text" id="button_color"><a id=button_a>Funcionalidades do Site</a></span></span></button>
       </div>
       <div class="div_apresentacao_img">
         <img src="img/img_1.png" alt="img_1" id="img_1">
