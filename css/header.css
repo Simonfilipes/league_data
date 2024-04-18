@@ -95,11 +95,19 @@ nav a:hover{
     transition-duration: 0.3s;
   }
 
-  @media screen and (max-width: 910px) { 
+  @media screen and (max-width: 1000px) { 
     nav{
       display: flex;
       flex-direction: row;
       gap: 90px;
+  }
+  }
+
+  @media screen and (max-width: 700px) { 
+    nav{
+      display: flex;
+      flex-direction: row;
+      gap: 80px;
   }
   }
 
