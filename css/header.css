@@ -99,7 +99,7 @@ nav a:hover{
     nav{
       display: flex;
       flex-direction: row;
-      gap: 100px;
+      gap: 90px;
   }
   }
 
@@ -107,15 +107,20 @@ nav a:hover{
     nav{
       display: flex;
       flex-direction: row;
-      gap: 50px;
+      gap: 30px;
   }
   }
 
   @media screen and (max-width: 570px){
     nav{
       display: flex;
-      flex-direction: row;
-      gap: 20px;
+      flex-direction: column;
+      gap: 5px;
   }
+
+  .nav_div{
+    margin: 15px 0px 0px 0px;
+    font-size: 18px;
+}
 }
   
