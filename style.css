@@ -18,7 +18,7 @@ html {
 #img_1{
     width: 350px;
     height: 350px;
-    border-radius: 30px;
+    border-radius: 0px;
     box-shadow: 0px 0px 4px 0px rgb(255, 255, 255);
     transition: .2s ease;
 }
@@ -29,8 +29,8 @@ html {
 
 /* HEADER INICIO */
 .header_box{
-    background-color: rgb(3, 2, 8);
-    height: 150px;
+    background-color: rgb(3, 3, 17);
+    height: 100px;
     box-shadow: 0px 0px 3px rgb(245, 245, 245);
 }
 /* HEADER FIM */
@@ -56,7 +56,7 @@ html {
 #button_1{
     width: 290px;
     height: 70px;
-    border-radius: 20px;
+    border-radius: 0px;
     background-color: rgb(21, 26, 90);
     border: solid rgb(0, 0, 0);
     box-shadow: 0px 0px 2px rgb(0, 0, 0);
@@ -111,7 +111,7 @@ html {
 .titulo{
     color: white;
     font-size: 30px;
-    margin: 100px 0px 100px 0px;
+    margin: 100px 0px 50px 0px;
     text-align: center;
 }
 
@@ -155,7 +155,6 @@ html {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     box-shadow: 0px 0px 2px white;
-    border-radius: 1rem;
   }
   
   .flip-card-front {
