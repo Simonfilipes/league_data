@@ -24,6 +24,19 @@ html {
     transition: .2s ease;
 }
 
+#logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 15px;
+    margin: 20px 0px 0px 20px;
+    box-shadow: 0px 0px 2px white;
+    transition: .2s ease;
+}
+
+#logo:hover{
+    transform: scale(1.10);
+}
+
 /* IMAGENS INICIO */
 
 /* GERAL */
