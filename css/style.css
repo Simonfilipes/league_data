@@ -77,7 +77,7 @@ html {
     color: rgb(255, 255, 255);
 }
 
-.div_apresentacao_txt span{
+.div_apresentacao_txt h1 span{
     color: rgb(252, 220, 43);
     font-style: oblique;
     text-decoration: underline;
