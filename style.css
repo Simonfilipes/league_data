@@ -2,18 +2,206 @@
 
 *{
     margin: 0px;
+    font-family: 'Popins', sans-serif;
 }
 
 body{
-    background-color: rgb(7, 7, 7);
+    background-color: rgb(3, 3, 17);
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* IMAGENS INICIO */
+
+#img_1{
+    width: 350px;
+    height: 350px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 4px 0px rgb(255, 255, 255);
+    transition: .2s ease;
+}
+
+/* IMAGENS INICIO */
 
 /* GERAL */
 
 /* HEADER INICIO */
 .header_box{
-    background-color: rgb(26, 26, 26);
-    height: 100px;
-    box-shadow: 0px 0px 9px rgb(70, 70, 70);
+    background-color: rgb(3, 2, 8);
+    height: 150px;
+    box-shadow: 0px 0px 3px rgb(245, 245, 245);
 }
 /* HEADER FIM */
+
+/* APRESENTAÇÃO INICIO */
+
+.div_apresentacao{
+    margin: 150px 0px 0px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div_apresentacao_txt{
+    margin-top: -60px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#button_1{
+    width: 290px;
+    height: 70px;
+    border-radius: 20px;
+    background-color: rgb(21, 26, 90);
+    border: solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 2px rgb(0, 0, 0);
+    transition: .2s ease;
+}
+
+#button_1:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+}
+
+#button_1 a{
+    text-decoration: none;
+    font-family: 'Popins', sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.div_apresentacao_txt span{
+    color: rgb(252, 220, 43);
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.div_apresentacao_img{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    margin-top: -60px;
+    margin-right: 50px;
+    transition: .2s ease;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0% {
+        top: 0px;
+    }
+
+    100%{
+        top: -10px;
+    }
+
+}
+
+/* APRESENTAÇÃO FIM */
+
+/* CARDS INICIO */
+
+.titulo{
+    color: white;
+    font-size: 30px;
+    margin: 100px 0px 100px 0px;
+    text-align: center;
+}
+
+/* CARDS UIVERSE */
+.flip-card {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+    font-family: sans-serif;
+  }
+  
+  .title {
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 150%;
+    height: 150%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 0px 0px 2px white;
+    border-radius: 1rem;
+  }
+  
+  .flip-card-front {
+    background: linear-gradient(120deg, rgb(21, 26, 90) 60%, rgb(10, 7, 58) 88%,
+       rgb(255, 255, 255) 40%, rgb(9, 4, 58) 48%);
+    color: rgb(255, 255, 255);
+  }
+  
+  .flip-card-back {
+    background: url(img/img_1.png);
+    transform: rotateY(180deg);
+  }
+
+  #p_1{
+    font-size: 20px;
+    color: white;
+  }
+
+  .title{
+    font-size: 40px;
+    color: white;
+  }
+/* CARDS UIVERSE */
+
+.div_cartas{
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    gap: 290px;
+}
+
+.flip-card-back{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* CARDS FIM */
+
+/* FOOTER */
+
+footer {
+    margin-top: 200px;
+    height: 20px;
+    padding: 60px 4%;
+    box-shadow: 0 0 5px 1px rgb(94, 94, 94);
+    background-color: rgb(5, 5, 5);
+}
+/* FOOTER */
