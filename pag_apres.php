@@ -12,11 +12,7 @@
 </head>
 
 <body>
-  <header>
-    <section class="header_box">
-
-    </section>
-  </header>
+  <?php include('header.php')?>
 
   <!-- BOAS VINDAS -->
     <section>
