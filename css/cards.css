@@ -14,7 +14,7 @@
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: row;
-  gap: 290px;
+  gap: 220px;
 }
 
 .flip-card-back{
