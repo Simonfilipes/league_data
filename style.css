@@ -116,6 +116,12 @@ html {
 }
 
 /* CARDS UIVERSE */
+
+.section_cards{
+    display: flex;
+    justify-content: center;
+}
+
 .flip-card {
     background-color: transparent;
     width: 190px;
