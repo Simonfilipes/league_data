@@ -41,13 +41,14 @@ html {
 .div_apresentacao{
     margin: 150px 0px 0px 50px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
+    align-items: center;
     justify-content: center;
     gap: 10%;
 }
 
 .div_apresentacao_txt{
-    margin-top: -60px;
     color: white;
     font-size: 30px;
     display: flex;
@@ -88,8 +89,6 @@ html {
     justify-content: center;
     text-align: center;
     margin: 50px;
-    margin-top: -60px;
-    margin-right: 50px;
     transition: .2s ease;
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
