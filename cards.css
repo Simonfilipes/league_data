@@ -1,3 +1,29 @@
+/* CARDS INICIO */
+
+.titulo{
+  color: white;
+  font-size: 30px;
+  margin: 100px 0px 50px 0px;
+  text-align: center;
+}
+
+
+.div_cartas{
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  gap: 290px;
+}
+
+.flip-card-back{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CARDS FIM */
+
+
 /*works janky on mobile :<*/
 .container {
     position: relative;
