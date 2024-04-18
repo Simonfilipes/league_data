@@ -1,0 +1,120 @@
+/* GERAL */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Popins', sans-serif;
+}
+
+body{
+    background-color: rgb(3, 3, 17);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* IMAGENS INICIO */
+
+#img_1{
+    width: 350px;
+    height: 350px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 4px 0px rgb(255, 255, 255);
+    transition: .2s ease;
+}
+
+/* IMAGENS INICIO */
+
+/* GERAL */
+
+/* HEADER INICIO */
+.header_box{
+    background-color: rgb(3, 3, 17);
+    height: 100px;
+    box-shadow: 0px 0px 3px rgb(245, 245, 245);
+}
+/* HEADER FIM */
+
+/* APRESENTAÇÃO INICIO */
+
+.div_apresentacao{
+    margin: 150px 0px 0px 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10%;
+}
+
+.div_apresentacao_txt{
+    margin-top: -60px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+#button_1{
+    width: 290px;
+    height: 70px;
+    border-radius: 0px;
+    background-color: rgb(21, 26, 90);
+    border: solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 2px rgb(0, 0, 0);
+    transition: .2s ease;
+}
+
+#button_1:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
+}
+
+#button_1 a{
+    text-decoration: none;
+    font-family: 'Popins', sans-serif;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+}
+
+.div_apresentacao_txt span{
+    color: rgb(252, 220, 43);
+    font-style: oblique;
+    text-decoration: underline;
+}
+
+.div_apresentacao_img{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    margin-top: -60px;
+    margin-right: 50px;
+    transition: .2s ease;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0% {
+        top: 0px;
+    }
+
+    100%{
+        top: -10px;
+    }
+
+}
+
+/* APRESENTAÇÃO FIM */
+
+/* FOOTER */
+
+footer {
+    margin-top: 200px;
+    height: 20px;
+    padding: 60px 4%;
+    box-shadow: 0 0 5px 1px rgb(94, 94, 94);
+    background-color: rgb(5, 5, 5);
+}
+/* FOOTER */
