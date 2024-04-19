@@ -13,8 +13,22 @@
                 </nav>
             </div>
 
-            <div class="translate">
-                <button class="button_header"> <i class="bi bi-translate" id="translate_icon"></i></button>
+            <script type="text/javascript">
+        // Função para ajustar a opacidade do elemento para 0
+        function tornarTransparente() {
+            document.getElementById('translate_icon').style.opacity = '0';
+        }
+
+        // Função para ajustar a opacidade do elemento de volta para 1
+        function tornarVisivelNovamente() {
+            document.getElementById('translate_icon').style.opacity = '1';
+        }
+    </script>
+
+            <div class="button_header" onmouseover="tornarTransparente()" onmouseout="tornarVisivelNovamente()">
+            
+            <div id="google_translate_element"></div>
+            <i class="bi bi-translate" id="translate_icon"></i>
             </div>
 
         </div>
