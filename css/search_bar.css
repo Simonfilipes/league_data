@@ -1,0 +1,46 @@
+.search_bar{
+    background-color: red;
+    display: flex;
+    padding: 5px;
+    background-color: rgb(14, 14, 41);
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.search_bar > input, .search_bar > select{
+    padding: 10px;
+    background-color: rgb(14, 14, 41);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+#search_input{
+    min-width: 200px;
+    width: 500px;
+}
+
+.search_button{
+    width: 40px;
+    background-color: transparent;
+    outline: none;
+}
+
+#svg {
+    fill: white;
+    cursor: pointer;
+}
+
+.banner img{
+    height: 200px;
+}
+
+.box{
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

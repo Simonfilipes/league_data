@@ -4,29 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/cards.css">
   <link rel="stylesheet" href="css/button_1.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-  <!-- SCRIPT TRANSLATOR -->
-
-  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <script type="text/javascript">
-        // Função para inicializar o widget de tradução
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({pageLanguage: 'pt'}, 'google_translate_element');
-        }
-        
-        // Função para traduzir a página
-        function traduzirParaIdioma(idioma) {
-            google.translate.translatePage('pt', idioma);
-        }
-    </script>
-  
-  <!-- SCRIPT TRANSLATOR -->
   <title>Document</title>
 </head>
 
