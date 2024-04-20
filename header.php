@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/responsive.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/search_bar.css">
         <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     </head>
     <body>
@@ -32,7 +33,7 @@
 
                     <div class="nav_div">
                         <nav>
-                            <a href="#">Champs</a>
+                            <a href="champions.php">Champs</a>
                             <a href="#">League Data</a>
                             <a href="#">Loldle</a>
                         </nav>
