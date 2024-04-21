@@ -22,9 +22,12 @@
 <div class="champs_box">
 
     <div class="champs">
-        <?php 
-        for($c = 0; $c < 50; $c++){
-            echo "<div class='champ'><img src='img\sona.jpg' alt='Sona'><span>Sona</span></div>";
+        <?php
+        require_once('request\getChampions.php');
+
+        $data = champion();
+        foreach($data as $champion){
+            echo "<div class='champ'><img src='$champion[imgUrl]' alt='$champion[champName]'><span>$champion[champName]</span></div>";
         }?>
     </div>
 
