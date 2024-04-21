@@ -19,6 +19,7 @@
 #search_input{
     min-width: 200px;
     width: 500px;
+    transition: 1s;
 }
 
 .search_button{
@@ -30,6 +31,9 @@
 #svg {
     fill: white;
     cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: 5px 5px 0px 0px;
 }
 
 .banner img{
@@ -44,3 +48,36 @@
     align-items: center;
     gap: 20px;
 }
+
+@media screen and (max-width: 1000px) {
+    #search_input{
+        width: 400px;
+    }
+
+    .search_bar > input, .search_bar > select{
+        padding: 10px;
+        font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    #search_input{
+        width: 300px;
+    }
+
+    .search_bar > input, .search_bar > select{
+        padding: 10px;
+        font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 570px) {
+    #search_input{
+        width: 200px;
+    }
+
+    .search_bar > input, .search_bar > select{
+        padding: 10px;
+        font-size: 14px;
+    }
+  }
