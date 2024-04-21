@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 
-*{
+* {
     margin: 0px;
     padding: 0px;
     font-family: "Montserrat", sans-serif;
@@ -10,7 +10,7 @@
     font-style: normal;
 }
 
-body{
+body {
     background-color: rgb(3, 3, 17);
 }
 
@@ -18,15 +18,15 @@ html {
     scroll-behavior: smooth;
 }
 
-.centralizado{
+.centralizado {
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);   
+    transform: translate(-50%, -50%);
 }
 
 /* IMAGENS INICIO */
 
-#img_1{
+#img_1 {
     width: 350px;
     height: 350px;
     border-radius: 0px;
@@ -34,7 +34,7 @@ html {
     transition: .2s ease;
 }
 
-#logo{
+#logo {
     width: 55px;
     height: 55px;
     border-radius: 15px;
@@ -43,7 +43,7 @@ html {
     transition: .2s ease;
 }
 
-#logo:hover{
+#logo:hover {
     transform: scale(1.10);
 }
 
@@ -52,15 +52,16 @@ html {
 /* GERAL */
 
 /* HEADER INICIO */
-.header_box{
+.header_box {
     background-color: rgb(3, 3, 17);
     height: 90px;
 }
+
 /* HEADER FIM */
 
 /* APRESENTAÇÃO INICIO */
 
-.div_apresentacao{
+.div_apresentacao {
     margin: 50px 0px 0px 50px;
     display: flex;
     flex-wrap: wrap;
@@ -70,7 +71,7 @@ html {
     gap: 10%;
 }
 
-.div_apresentacao_txt{
+.div_apresentacao_txt {
     color: white;
     font-size: 30px;
     display: flex;
@@ -78,7 +79,7 @@ html {
     gap: 130px;
 }
 
-#button_1{
+#button_1 {
     width: 290px;
     height: 70px;
     border-radius: 0px;
@@ -88,25 +89,25 @@ html {
     transition: .2s ease;
 }
 
-#button_1:hover{
+#button_1:hover {
     transform: scale(1.05);
     box-shadow: 0px 0px 10px 1px rgb(0, 0, 0);
 }
 
-#button_1 a{
+#button_1 a {
     text-decoration: none;
     font-family: 'Popins', sans-serif;
     font-size: 18px;
     color: rgb(255, 255, 255);
 }
 
-.div_apresentacao_txt h1 span{
+.div_apresentacao_txt h1 span {
     color: #fdff6c;
     font-style: oblique;
     text-decoration: underline;
 }
 
-.div_apresentacao_img{
+.div_apresentacao_img {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -116,16 +117,16 @@ html {
     animation: flutuar 2s ease-in-out infinite alternate;
 }
 
-.search_bar{
+.search_bar {
     padding: 20px;
 }
 
-@keyframes flutuar{
+@keyframes flutuar {
     0% {
         top: 0px;
     }
 
-    100%{
+    100% {
         top: -10px;
     }
 
@@ -142,4 +143,5 @@ footer {
     box-shadow: 0 0 5px 1px rgb(94, 94, 94);
     background-color: rgb(5, 5, 5);
 }
+
 /* FOOTER */
