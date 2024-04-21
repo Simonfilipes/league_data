@@ -22,13 +22,15 @@
 <div class="champs_box">
 
     <div class="champs">
-        <?php
+        
+    <?php
         require_once('request\getChampions.php');
 
         $data = champion();
         foreach($data as $champion){
-            echo "<div class='champ'><img src='$champion[imgUrl]' alt='$champion[champName]'><span>$champion[champName]</span></div>";
+            echo "<a href='#' class='a_champ'><div class='champ'><img src='{$champion['imgUrl']}' alt='{$champion['champName']}'><span>{$champion['champName']}</span></div></a>";
         }?>
+        
     </div>
 
     

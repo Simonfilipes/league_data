@@ -68,6 +68,10 @@ h1{
     cursor: pointer;
 }
 
+.a_champ{
+    text-decoration: none;
+}
+
 .champ img{
     width: 100px;
     border: 1px solid white;
