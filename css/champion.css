@@ -1,0 +1,74 @@
+.skills{
+    display: flex;
+}
+
+.skills div img{
+    width: 100px;
+    height: 100px;
+}
+
+.text_details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+    border: 1px solid white;
+    gap: 20px;
+    padding: 10px;
+}
+
+.text_details p {
+    padding: 10px;
+    color: white;
+    max-width: 500px;
+}
+
+.champ_box{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    text-align: center;
+}
+
+.champ_name{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+h1{
+    color: white;
+}
+
+.champs_box{
+    display: flex;
+    justify-content: center;
+}
+
+.champs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    max-width: 1000px;
+}
+
+.champ{
+    display: flex;
+    color: white;
+    width: fit-content;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+}
+
+.champ img{
+    width: 100px;
+    border: 1px solid white;
+}
