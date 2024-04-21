@@ -64,11 +64,11 @@ html {
 .div_apresentacao {
     margin: 50px 0px 0px 50px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 10%;
+    word-wrap: break-word;
+    gap: 7%;
 }
 
 .div_apresentacao_txt {

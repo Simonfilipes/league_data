@@ -30,7 +30,7 @@ nav a {
 nav a:hover {
   transform: scale(1.10);
   color: rgb(123, 130, 233);
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 #translate_icon {
