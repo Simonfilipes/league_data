@@ -16,10 +16,21 @@
     <div class="search_bar">
       <select name="region" id="region">
         <option value="BR">BR</option>
-        <option value="EU">EU</option>
-        <option value="LAS">LAS</option>
-        <option value="KR">KR</option>
+        <option value="NA">NA</option>
         <option value="EUW">EUW</option>
+        <option value="EUN">EUN</option>
+        <option value="KR">KR</option>
+        <option value="JP">JP</option>
+        <option value="RU">RU</option>
+        <option value="OCE">OCE</option>
+        <option value="TR">TR</option>
+        <option value="LAN">LAN</option>
+        <option value="LAS">LAS</option>
+        <option value="PH">PH</option>
+        <option value="SG">SG</option>
+        <option value="TH">TH</option>
+        <option value="TW">TW</option>
+        <option value="VN">VN</option>
       </select>
       <input type="text" placeholder='Pesquise pelo campeão ou pelo seu perfil de invocador' id="search_input">
       <svg viewBox="0 0 20 20" aria-hidden="true" style='max-height: 40px;' id="svg">

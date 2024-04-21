@@ -1,11 +1,12 @@
 @media screen and (max-width: 910px){
     .div_apresentacao{
-        margin:50px 50px 0px 50px;
+        flex-wrap:wrap;
     }
     .div_apresentacao_txt{
         font-size: 27px;
         transition: .2s ease;
         gap: 50px;
+        margin:50px 50px 0px 50px;
     }
 
 }
@@ -16,5 +17,6 @@
         transition: .2s ease;
         text-align: center;
         word-wrap: break-word;
+        margin:50px 50px 0px 50px;
     }
 }
