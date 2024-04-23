@@ -34,13 +34,65 @@
     text-align: center;
 }
 
+
+#img_champs{
+    border-radius: 0px;
+}
+
+.skills_and_skins{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#img_skill{
+    border-radius: 10px;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .champ_name{
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
 
+.skill{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    border: 1px solid white;
+    width: 500px;
+}
+
+.div_margin{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.div_margin p{
+    text-align: center;
+    margin: auto;
+    font-size: 12px;
+    margin: 15px;
+
+}
+
+.div_id{
+    margin: 25px;
+}
+
+
 h1{
+    color: white;
+}
+
+h2{
     color: white;
 }
 
