@@ -54,10 +54,11 @@
 
         <div class="champ_espaco">
             <div class="champ_logo">
-                <img src="img/sona.jpg" alt="img_champ" id="img_champ_logo">
+                <img src="img/sona_logo.jpg" alt="img_champ" id="img_champ_logo">
             </div>
             <div class="champ_name">
-                <p>Sona</p>
+                <p id="p_1">SONA</p>
+                <p id="p_2">A MESTRA DAS CORDAS<p>
             </div>
         </div>
 
