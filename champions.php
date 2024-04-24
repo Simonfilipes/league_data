@@ -30,7 +30,7 @@
         
 
         foreach($data as $champion){
-            echo "<a href='/champion.php?champ=$champion[id]' class='a_champ'><div class='champ'><img src='{$champion['imgUrl']}' alt='{$champion['champName']}'><span>{$champion['champName']}</span></div></a>";
+            echo "<a href='/league_data/champion.php?champ=$champion[id]' class='a_champ'><div class='champ'><img src='{$champion['imgUrl']}' alt='{$champion['champName']}'><span>{$champion['champName']}</span></div></a>";
         }?>
         
     </div>
