@@ -57,7 +57,7 @@
                 <img src="img/sona.jpg" alt="img_champ" id="img_champ_logo">
             </div>
             <div class="champ_name">
-                <p>Sona</p><
+                <p>Sona</p>
             </div>
         </div>
 
