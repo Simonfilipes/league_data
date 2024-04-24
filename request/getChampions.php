@@ -30,27 +30,34 @@
         }
         
         function champion_data($champ_name, $desired_object, $language){
-            header('Content-Type: application/json');
-
             $champion_url = sprintf($this->champion_url, $language, $champ_name);
             $response_json = file_get_contents($champion_url);
             $data = json_decode($response_json, true);
             $dados_desejados = $data['data'][$champ_name][$desired_object];
             
             
-            echo json_encode($dados_desejados, JSON_PRETTY_PRINT);
+            return $dados_desejados;
         }
     
         function skins($champ) {
-            for ($i = 0; $i < 5; $i++) { 
-                $url = sprintf($this->splash_url, $champ, $i); // Não dá para usar antes de ter um função que retorne quantas skins tem o campeão
-                echo "<img src='$url' alt=''>" . "<br>";
+            $skins = $this->champion_data($champ, 'skins', 'pt_BR');
+            $skins_list = [];
+
+            foreach($skins as $skin){
+                $skin_url = sprintf($this->splash_url, $champ, $skin['num']);
+                
+                $json_data = [
+                    'skinUrl' => $skin_url,
+                    'skinName' => $skin['name']
+                ];
+
+                $skins_list[] = $json_data;
             }
+
+            return $skins_list;
         }
+
+        
         
     }
-
-
-    $data = new API();
-    $data->champion_data('Aatrox', 'lore', 'pt_BR')
 ?>
