@@ -13,7 +13,7 @@
     <div class="banner">
       <img src="img\banner.png" alt="" srcset="">
     </div>
-    <div class="search_bar">
+    <div class="search_bar notranslate">
       <select name="region" id="region">
         <option value="BR">BR</option>
         <option value="NA">NA</option>
