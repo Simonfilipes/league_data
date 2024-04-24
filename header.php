@@ -24,7 +24,7 @@
                     <nav>
                         <a href="champions.php">Champs</a>
                         -
-                        <a href="#">League Data</a>
+                        <a href="pag_apres.php">Apresentação</a>
                         -
                         <a href="#">Loldle</a>
                     </nav>
@@ -40,7 +40,7 @@
                     }
                 </script>
 
-                <a href="pag_apres.php" id="feedback_a">
+                <a href="#" id="feedback_a">
                     <div class="button_header" onmouseover="tornarTransparente()" onmouseout="tornarVisivelNovamente()">
                         <i class="bi bi-star"></i>
                     </div>
