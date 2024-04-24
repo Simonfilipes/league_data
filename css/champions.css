@@ -1,0 +1,36 @@
+.champs_box{
+    display: flex;
+    justify-content: center;
+}
+
+.champs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 50px;
+    max-width: 1000px;
+}
+
+.champ{
+    display: flex;
+    color: white;
+    width: fit-content;
+    flex-direction: column;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.champ img{
+    width: 100px;
+    border: 1px solid white;
+}
+
+.champ span{
+    max-width: 100px;
+}
+
+a{
+    text-decoration: none;
+}

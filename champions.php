@@ -1,7 +1,7 @@
 <title>Champions</title>
 <?php include('header.php') ?>
 
-<link rel="stylesheet" href="css/champion.css">
+<link rel="stylesheet" href="css/champions.css">
 
 <div class="box">
             <div class="search_bar">
@@ -23,12 +23,20 @@
 
     <div class="champs">
         
-    <?php
-        require_once('request\getChampions.php');
+        <?php
+            require_once('request\getChampions.php');
 
-        $data = champion();
-        foreach($data as $champion){
-            echo "<a href='#' class='a_champ'><div class='champ'><img src='{$champion['imgUrl']}' alt='{$champion['champName']}'><span>{$champion['champName']}</span></div></a>";
+            $api_request = new API();
+            $data = $api_request->champions();
+
+            foreach($data as $champion){
+                echo 
+                "<a href='/league_data/champion.php?champ=$champion[id]' class='a_champ'>
+                    <div class='champ'>
+                        <img src='{$champion['imgUrl']}' alt='{$champion['champName']}'>
+                        <span>{$champion['champName']}</span>
+                    </div>
+                </a>";
         }?>
         
     </div>

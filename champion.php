@@ -1,4 +1,11 @@
-<?php include('header.php') ?>
+<?php include('header.php');
+
+    if(isset($_GET['champ'])){
+        // echo 'deu bom';
+    }else{
+        // echo 'deu ruim';
+    }
+?>
 
 <title>League Data - Champion</title>
 
