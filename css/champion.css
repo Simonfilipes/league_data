@@ -30,13 +30,9 @@
     border: 1px solid white;
 }
 
-#p_1{
+.champ_name{
     color: white;
-    margin: 35px 0px 0px 0px;
+    margin: 50px 0px 0px 0px;
     font-size: 50px;
-}
-
-#p_2{
-    color: white;
-    font-size: 20px;
+    text-decoration: underline;
 }
