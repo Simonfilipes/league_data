@@ -1,130 +1,38 @@
-.skills{
+
+.area_1{
     display: flex;
+    flex-direction: row;
+    color: white;
+    margin: 30px 0px 0px 15px;
+    gap: 10px;
 }
 
-.skills div img{
+.select_area_1{
+    text-align: center;
+    width: 20%;
+    height: 30px;
+    background-color: rgb(3, 3, 17);
+    color: white;
+}
+
+.champ_espaco{
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0px 0px 15px;
+    width: 97%;
+    border: 1px solid white;
+}
+
+#img_champ_logo{
+    margin: 30px;
     width: 100px;
     height: 100px;
-}
-
-.text_details{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    color: white;
     border: 1px solid white;
-    gap: 20px;
-    padding: 10px;
-}
-
-.text_details p {
-    padding: 10px;
-    color: white;
-    max-width: 500px;
-}
-
-.champ_box{
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    gap: 30px;
-    text-align: center;
-}
-
-
-#img_champs{
-    border-radius: 0px;
-}
-
-.skills_and_skins{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-#img_skill{
-    border-radius: 10px;
-}
-
-.skills{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .champ_name{
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.skill{
-    display: flex;
-    flex-direction: row;
     color: white;
-    border: 1px solid white;
-    width: 500px;
-}
-
-.div_margin{
-    margin: 10px;
-    display: flex;
-    flex-direction: row;
-}
-
-.div_margin p{
-    text-align: center;
-    margin: auto;
-    font-size: 12px;
-    margin: 15px;
-
-}
-
-.div_id{
-    margin: 25px;
-}
-
-
-h1{
-    color: white;
-}
-
-h2{
-    color: white;
-}
-
-.champs_box{
-    display: flex;
-    justify-content: center;
-}
-
-.champs{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 50px;
-    max-width: 1000px;
-}
-
-.champ{
-    display: flex;
-    color: white;
-    width: fit-content;
-    flex-direction: column;
-    text-align: center;
-    cursor: pointer;
-}
-
-.a_champ{
-    text-decoration: none;
-}
-
-.champ img{
-    width: 100px;
-    border: 1px solid white;
+    margin: 50px 0px 0px 0px;
+    font-size: 50px;
+    text-decoration: underline;
 }

@@ -9,28 +9,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/search_bar.css">
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 
 <body>
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'pt',
-                layout: google.translate.TranslateElement.InlineLayout.NULL
-            }, 'google_translate_element');
-        }
-
-        function traduzirParaIdioma(idioma) {
-            document.documentElement.lang = idioma;
-        }
-    </script>
 
     <header>
         <div class="header_box">
             <div class="header_box_div">
                 <div class="div_logo">
-                    <a href="index.php"><img src="img/logo.jpg" alt="logo" id="logo"></a>
+                    <a href="index.php"><img src="img/logo.png" alt="logo" id="logo"></a>
                 </div>
 
                 <div class="nav_div">

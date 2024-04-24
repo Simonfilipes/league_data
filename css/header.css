@@ -7,8 +7,8 @@
 }
 
 .nav_div {
-  margin: 35px 0px 0px 50px;
-  font-size: 20px;
+  margin: 50px 0px 0px 0px;
+  font-size: 25px;
 }
 
 nav {
@@ -17,19 +17,18 @@ nav {
   gap: 50px;
   float: right;
   margin-right: 20px;
-  color: rgb(164, 169, 238);
+  color: rgb(255, 255, 255);
 }
 
 nav a {
-  color: rgb(164, 169, 238);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   transition: 0.2s ease;
-  font-style: oblique;
 }
 
 nav a:hover {
   transform: scale(1.10);
-  color: rgb(123, 130, 233);
+  color: rgb(255, 255, 255);
   text-decoration: underline;
 }
 
@@ -44,8 +43,8 @@ nav a:hover {
 }
 
 .button_header {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
   border-radius: 10px;
   background-color: rgb(7, 7, 48);
   border: none;
@@ -58,7 +57,7 @@ nav a:hover {
   transition-duration: 0.3s;
   overflow: hidden;
   position: relative;
-  margin: 25px 20px 0px 0px;
+  margin: 30px 20px 0px 0px;
 }
 
 #google_translate_element {
@@ -86,6 +85,7 @@ nav a:hover {
 #feedback_a {
   text-decoration: none;
   color: white;
+  font-size: 20px;
 }
 
 .button_header:hover .svgIcon {
