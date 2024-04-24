@@ -39,27 +39,6 @@
     </div>
   </div>
 
-  <div class="gtranslate_wrapper"></div>
-
-  <script>
-    window.gtranslateSettings = {
-      "default_language": "pt",
-      "native_language_names": true,
-      "languages": ["pt", "en", "ja", "ko", "it", "es"],
-      "globe_color": "#66aaff",
-      "wrapper_selector": ".gtranslate_wrapper",
-      "flag_size": 24,
-      "horizontal_position": "left",
-      "vertical_position": "bottom",
-      "alt_flags": {
-        "en": "usa",
-        "pt": "brazil"
-      }
-    }
-  </script>
-
-  <script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
-
 </body>
 
 </html>
