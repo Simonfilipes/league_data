@@ -1,10 +1,10 @@
 <?php include('header.php');
 
-    if(isset($_GET['champ'])){
-        // echo 'deu bom';
-    }else{
-        // echo 'deu ruim';
-    }
+if (isset($_GET['champ'])) {
+    // echo 'deu bom';
+} else {
+    // echo 'deu ruim';
+}
 ?>
 
 <title>League Data - Champion</title>
@@ -61,14 +61,28 @@
 
         <div class="champ_espaco">
             <div class="champ_logo">
-                <img src="img/sona.jpg" alt="img_champ" id="img_champ_logo">
+                <img src="img/sona_logo.jpg" alt="img_champ" id="img_champ_logo">
             </div>
             <div class="champ_name">
-                <p>Sona</p>
+                <p id="p_1">SONA</p>
+                <p id="p_2">A MESTRA DAS CORDAS</p>
             </div>
         </div>
 
-
+        <div class="rate_espaco">
+            <div class="win_rate">
+                <p id="rate_1">Win Rate</p>
+                <p id="rate_2">54,37%</p>
+            </div>
+            <div class="pick_rate">
+                <p id="rate_1">Pick Rate</p>
+                <p id="rate_2">4.24%</p>
+            </div>
+            <div class="ban_rate">
+                <p id="rate_1">Ban Rate</p>
+                <p id="rate_2">0.68%</p>
+            </div>
+        </div>
 
     </div>
 

@@ -15,12 +15,15 @@
     color: white;
 }
 
+.area_2{
+    width: 97.5%;
+    border: 1px solid white;
+    margin: 30px 0px 0px 15px;
+}
+
 .champ_espaco{
     display: flex;
     flex-direction: row;
-    margin: 30px 0px 0px 15px;
-    width: 97.5%;
-    border: 1px solid white;
 }
 
 #img_champ_logo{
@@ -28,11 +31,34 @@
     width: 100px;
     height: 100px;
     border: 1px solid white;
+    box-shadow: 0px 0px -8px black;
+}   
+
+#p_1{
+    color: white;
+    margin: 35px 0px 0px 0px;
+    font-size: 50px;
 }
 
-.champ_name{
+#p_2{
     color: white;
-    margin: 50px 0px 0px 0px;
-    font-size: 50px;
-    text-decoration: underline;
+    font-size: 20px;
+}
+
+.rate_espaco{
+    display: flex;
+    justify-content: row;
+    gap: 30px;
+    color: white;
+    margin: 0px 0px 15px 35px;
+}
+
+#rate_1{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+#rate_2{
+    font-size: 17px;
+    margin: 0px 0px 0px 5px;
 }
