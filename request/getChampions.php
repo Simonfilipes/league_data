@@ -16,4 +16,20 @@
         }
         return $champions;
     }
+
+
+    function skins() {
+        $url = 'https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_0.jpg';
+        $response_json = file_get_contents($url);
+        $data = json_decode($response_json, true);
+
+       
+
+        for ($i = 0; $i < 5; $i++) { 
+            $base_url = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_$i.jpg";
+            echo "<img src='$base_url' alt=''>" . "<br>";
+
+        }
+    }
+    skins();
 ?>
