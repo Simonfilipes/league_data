@@ -1,12 +1,15 @@
 <?php
     class API{
-        public $champions_url = "https://ddragon.leagueoflegends.com/cdn/14.8.1/data/en_US/champion.json";
+        public $versions_url = "https://ddragon.leagueoflegends.com/api/versions.json";
         
-        public $champion_url = "https://ddragon.leagueoflegends.com/cdn/14.8.1/data/en_US/champion/%d.json";
+        function __construct(){
+            $response_json = file_get_contents($this->versions_url);
+            $version = json_decode($response_json, true)[0];
 
-        public $splash_url = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/%s_%d.jpg";
-        
-
+            $this->champions_url = "https://ddragon.leagueoflegends.com/cdn/$version/data/en_US/champion.json";
+            $this->champion_url = "https://ddragon.leagueoflegends.com/cdn/$version/data/%s/champion/%s.json";
+            $this->splash_url = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/%s_%d.jpg";
+        }
 
         function champions() {
             $response_json = file_get_contents($this->champions_url);
@@ -26,6 +29,17 @@
             return $champions;
         }
         
+        function champion_data($champ_name, $desired_object, $language){
+            header('Content-Type: application/json');
+
+            $champion_url = sprintf($this->champion_url, $language, $champ_name);
+            $response_json = file_get_contents($champion_url);
+            $data = json_decode($response_json, true);
+            $dados_desejados = $data['data'][$champ_name][$desired_object];
+            
+            
+            echo json_encode($dados_desejados, JSON_PRETTY_PRINT);
+        }
     
         function skins($champ) {
             for ($i = 0; $i < 5; $i++) { 
@@ -35,4 +49,8 @@
         }
         
     }
+
+
+    $data = new API();
+    $data->champion_data('Aatrox', 'lore', 'pt_BR')
 ?>
