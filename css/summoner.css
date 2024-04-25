@@ -1,0 +1,8 @@
+.summonerprofile, .profileArea3, .profileArea2, .profileArea1{
+    display: flex;
+    color: white;
+}
+
+.profileArea1{
+    flex-direction: column;
+}
