@@ -86,17 +86,33 @@ if (isset($_GET['champ'])) {
 
     </div>
 
-    <div class="area_3">
+    <div class="area_2_5">
 
-        <div class="runas">
+        <div class="titulo_runa">
+
             <div class="tittle_runas">
                 <p>Runas</p>
             </div>
+            
         </div>
-        <div class="itens">
+
+        <div class="titulo_itens">
+
             <div class="tittle_itens">
                 <p>Build</p>
             </div>
+
+        </div>
+
+    </div>
+
+    <div class="area_3">
+
+        <div class="runas">
+
+        </div>
+        <div class="itens">
+
         </div>
 
     </div>
