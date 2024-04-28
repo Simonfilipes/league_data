@@ -24,7 +24,7 @@
                     <nav>
                         <!-- <a href="champions.php">Champs</a>
                         - -->
-                        <a href="pag_apres.php">League Data</a>
+                        <a href="pag_apres.php"><img src="img/League_Data.png" alt="" id="League_Data"></a>
                         <!-- -
                         <a href="#">Loldle</a> -->
                     </nav>

@@ -6,9 +6,20 @@
   text-align: center;
 }
 
+/* 
+body{
+  overflow-y: hidden;
+} */
+
 .nav_div {
   margin: 35px 0px 0px 0px;
   font-size: 40px;
+}
+
+#League_Data{
+  width: 100%;
+  height: 80px;
+  margin-top: -20px;
 }
 
 nav {
