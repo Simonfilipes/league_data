@@ -158,3 +158,10 @@
     width: 140px;
     height: 140px;
 }
+.skill_img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}

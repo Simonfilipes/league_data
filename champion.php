@@ -1,10 +1,11 @@
-<?php include('header.php');
-
-if (isset($_GET['champ'])) {
-    // echo 'deu bom';
-} else {
-    // echo 'deu ruim';
-}
+<?php 
+    include('header.php');
+    include_once('request\getData.php');
+    if (isset($_GET['champ'])) {
+        $champ = $_GET['champ'];
+    } else {
+        // echo 'deu ruim';
+    }
 ?>
 
 <title>League Data - Champion</title>
@@ -61,11 +62,16 @@ if (isset($_GET['champ'])) {
 
         <div class="champ_espaco">
             <div class="champ_logo">
-                <img src="img/sona_logo.jpg" alt="img_champ" id="img_champ_logo">
+                <?php echo "<img src='https://ddragon.leagueoflegends.com/cdn/14.8.1/img/champion/$champ.png' alt='img_champ' id='img_champ_logo'>"?>
             </div>
             <div class="champ_name">
-                <p id="p_1">SONA</p>
-                <p id="p_2">A MESTRA DAS CORDAS</p>
+                <?php 
+                    echo "<p id='p_1'>$champ</p>";
+                    $api_request = new API();
+                    $title = $api_request->champion_data($champ, 'title', 'pt_BR');
+                    echo "<p id='p_2'>$title</p>";  
+                ?>
+                
             </div>
         </div>
 
@@ -108,19 +114,24 @@ if (isset($_GET['champ'])) {
         <div class="centralizar_area_4_e_skins">
 
             <div class="box_area_4">
-
-                <select name="lane" class="select_area_4" id="region">
-                    <option value="top">Habilidade - P</option>
-                    <option value="jungle">Habilidade - Q</option>
-                    <option value="mid">Habilidade - W</option>
-                    <option value="adc">Habilidade - E</option>
-                    <option value="support">Habilidade - R</option>
+                <select name="lane" class="select_area_4" id="skills" onchange=redirect()>
+                    <option value="p">Habilidade - P</option>
+                    <option value="q">Habilidade - Q</option>
+                    <option value="w">Habilidade - W</option>
+                    <option value="e">Habilidade - E</option>
+                    <option value="r">Habilidade - R</option>
                 </select>
 
                 <div class="skill_img">
-                    <img src="img/sona_logo.jpg" alt="" id="skill_img">
-                </div>
+                    <?php
+                        $spells = $api_request->champion_data($champ, 'passive', 'pt_BR');
+                        $spellsimg = json_encode($spells['image']['full'], JSON_UNESCAPED_SLASHES);
+                        $spellsimg = str_replace('"', '', $spellsimg);
 
+                        echo "<img src='https://ddragon.leagueoflegends.com/cdn/14.8.1/img/passive/$spellsimg' alt='$champ passive' id='skill_img'>";
+                        echo "<p id='skill_content'>$spells[description]</p>";
+                    ?>
+                </div>
             </div>
 
             <div class="area_skins">
@@ -140,3 +151,4 @@ if (isset($_GET['champ'])) {
     </div>
 
 </div>
+<script src="js\champion.js"></script>

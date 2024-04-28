@@ -71,6 +71,8 @@
     </script>
 
     <script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
+    <link rel="stylesheet" href="css/search_bar.css">
+
 </body>
 
 </html>
