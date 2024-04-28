@@ -112,16 +112,16 @@ html {
     justify-content: center;
     text-align: center;
     margin: 50px;
-    transition: .2s ease;
+    /* transition: .2s ease;
     position: relative;
-    animation: flutuar 2s ease-in-out infinite alternate;
+    animation: flutuar 2s ease-in-out infinite alternate; */
 }
 
 .search_bar {
     padding: 20px;
 }
 
-@keyframes flutuar {
+/* @keyframes flutuar {
     0% {
         top: 0px;
     }
@@ -130,7 +130,7 @@ html {
         top: -10px;
     }
 
-}
+} */
 
 /* APRESENTAÇÃO FIM */
 
