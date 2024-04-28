@@ -1,8 +1,64 @@
-.summonerprofile, .profileArea3, .profileArea2, .profileArea1{
+.summonerprofile, .profileArea3, .profileArea2, .profileArea1, .infoProfile, .maestrias, main{
     display: flex;
     color: white;
 }
 
+main{
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.summonerprofile{
+    gap: 20px;
+}
+
 .profileArea1{
     flex-direction: column;
+    gap: 10px;
+}
+
+.profileArea2{
+    gap: 5px;
+}
+
+.profileArea3{
+    gap: 10px;
+}
+
+.profileArea2 > p {
+    border: 0.5px solid white;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.iconprofile{
+    text-align: center;
+}
+
+.iconprofile > img{
+    border-radius: 10px;
+    width: 85px;
+}
+
+.infoProfile{
+    flex-direction: column;
+    justify-content: center;
+}
+
+#nickname{
+    font-size: 36px;
+}
+
+#rank{
+    font-size: 10px;
+}
+
+.maestrias{
+    flex-direction: column;
+    justify-content: center;
+}
+
+.maestrias > div > img{
+    height: 50px;
 }
