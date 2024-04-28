@@ -12,8 +12,8 @@
     text-align: center;
     width: 20%;
     height: 30px;
-    background-color: #31313C;
     border-radius: 5px;
+    background-color: rgb(3, 3, 17);
     color: white;
 }
 
@@ -21,7 +21,6 @@
     width: 97.5%;
     border: 1px solid white;
     margin: 30px 0px 0px 15px;
-    background-color: #31313C;
     border-radius: 5px;
 }
 
@@ -77,53 +76,85 @@
     width: 48.2%;
     height: 500px;
     border: 1px solid white;
-    margin: 10px 0px 30px 15px;
+    margin: 10px 0px 15px 15px;
     border-radius: 5px;
-    background-color: #31313C;
-}
-
-.tittle_runas{
-    color: white;
-    font-size: 35px;
-    text-align: center;
-    margin: 25px 0px 0px 0px;
 }
 
 .itens{
     width: 48.2%;
     height: 500px;
     border: 1px solid white;
-    margin: 10px 0px 30px 15px;
+    margin: 10px 0px 15px 15px;
     border-radius: 5px;
-    background-color: #31313C;
+}
+
+.tittle_runas{
+    color: white;
+    font-size: 35px;
+    margin: 25px 0px 0px 30px;
 }
 
 .tittle_itens{
     color: white;
     font-size: 35px;
-    text-align: center;
-    margin: 25px 0px 0px 0px;
+    margin: 25px 0px 0px 30px;
 }
 
-.area_2_5{
+.box_area_4{
+    width: 98%;
+    height: 250px;
+    border: 1px solid white;
+    margin: 0px 0px 15px 15px;
+    border-radius: 5px;
+}
+
+.select_area_4{
+    text-align: center;
+    width: 20%;
+    height: 30px;
+    border-radius: 5px;
+    margin: 30px 0px 0px 30px;
+    background-color: rgb(3, 3, 17);
+    color: white;
+}
+
+.box_area_5{
+    width: 48.2%;
+    height: 650px;
+    border: 1px solid white;
+    margin: 0px 0px 30px 15px;
+    border-radius: 5px;
+}
+
+.div_centralizar_area_4_e_5{
     display: flex;
     flex-direction: row;
 }
 
-.titulo_runa{
-    width: 48.2%;
-    height: 100px;
-    border: 1px solid white;
-    margin: 15px 0px 5px 15px;
-    border-radius: 5px;
-    background-color: #282830;
+.tittle_matchups{
+    color: white;
+    font-size: 35px;
+    margin: 25px 0px 0px 30px;
 }
 
-.titulo_itens{
-    width: 48.2%;
-    height: 100px;
+.area_skins{
+    width: 98%;
+    height: 383.5px;
     border: 1px solid white;
-    margin: 15px 0px 5px 15px;
+    margin: 0px 0px 30px 15px;
     border-radius: 5px;
-    background-color: #282830;
+}
+
+.centralizar_area_4_e_skins{
+    display: flex;
+    flex-direction: column;
+    width: 49.3%
+}
+
+#skill_img{
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 15px 0px 0px 30px;
+    width: 140px;
+    height: 140px;
 }

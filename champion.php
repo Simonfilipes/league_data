@@ -86,32 +86,54 @@ if (isset($_GET['champ'])) {
 
     </div>
 
-    <div class="area_2_5">
+    <div class="area_3">
 
-        <div class="titulo_runa">
-
+        <div class="runas">
             <div class="tittle_runas">
                 <p>Runas</p>
             </div>
-            
         </div>
-
-        <div class="titulo_itens">
-
+        <div class="itens">
             <div class="tittle_itens">
                 <p>Build</p>
             </div>
-
         </div>
 
     </div>
 
-    <div class="area_3">
 
-        <div class="runas">
+    <div class="div_centralizar_area_4_e_5">
+
+
+        <div class="centralizar_area_4_e_skins">
+
+            <div class="box_area_4">
+
+                <select name="lane" class="select_area_4" id="region">
+                    <option value="top">Habilidade - P</option>
+                    <option value="jungle">Habilidade - Q</option>
+                    <option value="mid">Habilidade - W</option>
+                    <option value="adc">Habilidade - E</option>
+                    <option value="support">Habilidade - R</option>
+                </select>
+
+                <div class="skill_img">
+                    <img src="img/sona_logo.jpg" alt="" id="skill_img">
+                </div>
+
+            </div>
+
+            <div class="area_skins">
+
+            </div>
 
         </div>
-        <div class="itens">
+
+        <div class="box_area_5">
+
+            <div class="tittle_matchups">
+                <p>Matchups</p>
+            </div>
 
         </div>
 
