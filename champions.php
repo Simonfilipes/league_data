@@ -24,7 +24,7 @@
         <div class="champs">
             
             <?php
-                require_once('request\getChampions.php');
+                require_once('request\getData.php');
 
                 $api_request = new API();
                 $data = $api_request->champions();
