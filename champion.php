@@ -1,4 +1,4 @@
-<?php include('header.php');
+<?php include('header_champions.php');
 
 if (isset($_GET['champ'])) {
     // echo 'deu bom';
