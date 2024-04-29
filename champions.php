@@ -9,7 +9,7 @@
         <div class="champs">
 
             <?php
-            require_once('request\getData.php');
+            require_once('request\api.php');
 
             $api_request = new API();
             $data = $api_request->champions();

@@ -1,6 +1,6 @@
 <?php 
     include('header.php');
-    include_once('request\getData.php');
+    include_once('request\api.php');
     if (isset($_GET['champ'])) {
         $champ = $_GET['champ'];
     } else {
@@ -122,20 +122,13 @@
                     <option value="r">Habilidade - R</option>
                 </select>
 
-                <div class="skill_img">
-                    <?php
-                        $spells = $api_request->champion_data($champ, 'passive', 'pt_BR');
-                        $spellsimg = json_encode($spells['image']['full'], JSON_UNESCAPED_SLASHES);
-                        $spellsimg = str_replace('"', '', $spellsimg);
+                <div class="champSpells">
 
-                        echo "<img src='https://ddragon.leagueoflegends.com/cdn/14.8.1/img/passive/$spellsimg' alt='$champ passive' id='skill_img'>";
-                        echo "<p id='skill_content'>$spells[description]</p>";
-                    ?>
                 </div>
             </div>
 
             <div class="area_skins">
-
+                
             </div>
 
         </div>

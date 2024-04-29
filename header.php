@@ -72,6 +72,7 @@
 
     <script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
     <link rel="stylesheet" href="css/search_bar.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
 </body>
 
