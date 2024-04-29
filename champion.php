@@ -127,10 +127,27 @@
                 </div>
             </div>
 
-            <div class="area_skins">
-                
-            </div>
-
+            <section class="container area_skins">
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <?php
+                            $champskins = $api_request->skins($champ);
+                            $count = 1;
+                            foreach($champskins as $skin){
+                                echo "<img src='$skin[skinUrl]' alt='$skin[skinName]' id='slide-$count'>";
+                                $count++;
+                            };
+                        ?>
+                    </div>
+                    <div class="slider-nav">
+                        <?php
+                            for($c = 1; $c < $count; $c++){
+                                echo "<a href='#slide-$c'>";
+                            };
+                        ?>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <div class="box_area_5">
