@@ -4,7 +4,45 @@ async function champData(){
     champName = document.querySelector('#p_1').textContent;
     champSpells = await axios.get(`request/getData.php?function_name=spells&champ_name=${champName}`);
     champPassive = await axios.get(`request/getData.php?function_name=passive&champ_name=${champName}`);
-    redirect()
+
+    await getBuildDefault();
+    await redirect();
+}
+
+async function getBuildDefault(){
+    champ_build = await axios.get(`request/getData.php?function_name=build&champ_name=${champName}`);
+    champ_build = champ_build.data.pageProps;
+    setRates(champ_build)
+}
+
+async function updateBuildByFilter(){
+    position = document.querySelector("#position").value;
+    region = document.querySelector("#region").value;
+    tier = document.querySelector("#tier").value;
+
+    champ_build = await axios.get(`request/getData.php?function_name=filterBuild&champ_name=${champName}&region=${region}&tier=${tier}&position=${position}`);
+    champ_build = champ_build.data.pageProps;
+
+    console.log(champ_build);
+    setRates(champ_build);
+}
+
+function setRates(champ_build){
+    region = document.querySelector('#region');
+    tier = document.querySelector('#tier');
+    position = document.querySelector('#position');
+
+    pickrate = document.querySelector('#pickrate');
+    banrate = document.querySelector('#banrate');
+    winrate = document.querySelector('#winrate');
+
+    region.value = champ_build.region;
+    tier.value = champ_build.tier;
+    position.value = champ_build.position;
+
+    pickrate.textContent = ((champ_build.data.trends.pick[0].rate )* 100).toFixed(2) + "%";
+    banrate.textContent = ((champ_build.data.trends.ban[0].rate )* 100).toFixed(2) + "%";
+    winrate.textContent = ((champ_build.data.trends.win[0].rate )* 100).toFixed(2) + "%";
 }
 
 async function redirect(){

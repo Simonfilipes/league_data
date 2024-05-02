@@ -17,7 +17,14 @@
             case 'passive':
                 echo json_encode($api->champion_data($_GET['champ_name'], 'passive', 'pt_BR'));
                 break;
+            
+            case 'filterBuild':
+                echo json_encode($api->championBuildDataByFilter($_GET['champ_name'], $_GET['region'], $_GET['tier'], $_GET['position']));
+                break;
 
+            case 'build':
+                echo json_encode($api->championBuildData($_GET['champ_name']));
+                break;
             default:
                 echo "Função desconhecida";
         }
