@@ -153,7 +153,7 @@
         <div class="box_area_5">
 
             <div class="tittle_matchups">
-                <p>Matchups</p>
+                Matchups
             </div>
 
         </div>
