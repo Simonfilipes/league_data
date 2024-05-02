@@ -9,6 +9,15 @@
             $this->champions_url = "https://ddragon.leagueoflegends.com/cdn/$version/data/en_US/champion.json";
             $this->champion_url = "https://ddragon.leagueoflegends.com/cdn/$version/data/%s/champion/%s.json";
             $this->splash_url = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/%s_%d.jpg";
+            $this->build_champ_by_filter = "https://www.op.gg/_next/data/4mBKxjC5odzx1ft4Zo7YI/en_US/champions/%s/build/%s.json?region=%s&champion=%s&position=%s&tier=%s";
+            $this->build_champ = "https://www.op.gg/_next/data/4mBKxjC5odzx1ft4Zo7YI/en_US/champions/%s/build.json?champion=%s";
+
+            $this->options = [
+                'http' => [
+                    'method' => 'GET',
+                    'header' => 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
+                ]
+            ];
         }
 
         function champions() {
@@ -57,7 +66,27 @@
             return $skins_list;
         }
 
-        
+        function championBuildDataByFilter($champName, $region='', $tier='', $position=''){
+            $request_data_url = sprintf($this->build_champ_by_filter, $champName, $position, $region, $champName, $position, $tier);
+
+            $context = stream_context_create($this->options);
+            $response_json = file_get_contents($request_data_url, false, $context);
+
+            $data = json_decode($response_json, true);
+
+            return $data;
+        }
+
+        function championBuildData($champName){
+            $request_data_url = sprintf($this->build_champ, $champName, $champName);
+
+            $context = stream_context_create($this->options);
+            $response_json = file_get_contents($request_data_url, false, $context);
+
+            $data = json_decode($response_json, true);
+
+            return $data;
+        }
         
     }
 ?>

@@ -16,7 +16,7 @@
 
     <div class="area_1">
 
-        <select name="lane" class="select_area_1" id="region">
+        <select name="lane" class="select_area_1" id="position" onchange=updateBuildByFilter()>
             <option value="top">Top</option>
             <option value="jungle">Jungle</option>
             <option value="mid">Mid</option>
@@ -24,36 +24,42 @@
             <option value="support">Support</option>
         </select>
 
-        <select name="region" class="select_area_1" id="region">
-            <option value="BR">BR</option>
-            <option value="NA">NA</option>
-            <option value="EUW">EUW</option>
-            <option value="EUN">EUN</option>
-            <option value="KR">KR</option>
-            <option value="JP">JP</option>
-            <option value="RU">RU</option>
-            <option value="OCE">OCE</option>
-            <option value="TR">TR</option>
-            <option value="LAN">LAN</option>
-            <option value="LAS">LAS</option>
-            <option value="PH">PH</option>
-            <option value="SG">SG</option>
-            <option value="TH">TH</option>
-            <option value="TW">TW</option>
-            <option value="VN">VN</option>
+        <select name="region" class="select_area_1" id="region" onchange=updateBuildByFilter()>
+            <option value="global">Global</option>
+            <option value="br">BR</option>
+            <option value="na">NA</option>
+            <option value="euw">EUW</option>
+            <option value="eun">EUN</option>
+            <option value="kr">KR</option>
+            <option value="jp">JP</option>
+            <option value="ru">RU</option>
+            <option value="oce">OCE</option>
+            <option value="tr">TR</option>
+            <option value="lan">LAN</option>
+            <option value="las">LAS</option>
+            <option value="ph">PH</option>
+            <option value="sg">SG</option>
+            <option value="th">TH</option>
+            <option value="tw">TW</option>
+            <option value="vn">VN</option>
         </select>
 
-        <select name="elo" class="select_area_1" id="region">
-            <option value="ferro">Ferro</option>
+        <select name="elo" class="select_area_1" id="tier" onchange=updateBuildByFilter()>
+            <option value="iron">Ferro</option>
             <option value="bronze">Bronze</option>
-            <option value="prata">Prata</option>
-            <option value="ouro">Ouro</option>
-            <option value="platina">Platina</option>
-            <option value="esmeralda">Esmeralda</option>
-            <option value="diamante">Diamante</option>
-            <option value="mestre">Mestre</option>
-            <option value="grao_mestre">Grão Mestre</option>
-            <option value="desafiante">Desafiante</option>
+            <option value="silver">Prata</option>
+            <option value="gold">Ouro</option>
+            <option value="gold_plus">Ouro +</option>
+            <option value="platinum">Platina</option>
+            <option value="platinum_plus">Platina +</option>
+            <option value="emerald">Esmeralda</option>
+            <option value="emerald_plus">Esmeralda +</option>
+            <option value="diamond">Diamante</option>
+            <option value="diamond_plus">Diamante +</option>
+            <option value="master">Mestre</option>
+            <option value="master_plus">Mestre +</option>
+            <option value="grandmaster">Grão Mestre</option>
+            <option value="challenger">Desafiante</option>
         </select>
 
     </div>
@@ -78,15 +84,15 @@
         <div class="rate_espaco">
             <div class="win_rate">
                 <p id="rate_1">Win Rate</p>
-                <p id="rate_2">54,37%</p>
+                <p id="winrate">54,37%</p>
             </div>
             <div class="pick_rate">
                 <p id="rate_1">Pick Rate</p>
-                <p id="rate_2">4.24%</p>
+                <p id="pickrate">4.24%</p>
             </div>
             <div class="ban_rate">
                 <p id="rate_1">Ban Rate</p>
-                <p id="rate_2">0.68%</p>
+                <p id="banrate">0.68%</p>
             </div>
         </div>
 
