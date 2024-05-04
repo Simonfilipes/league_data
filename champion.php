@@ -1,12 +1,12 @@
-<?php 
-    include('header.php');
-    include_once('request\api.php');
-    if (isset($_GET['champ'])) {
-        $champ = $_GET['champ'];
-    }else {
-        header("Location: champions.php");
-        exit();
-    }
+<?php
+include('header.php');
+include_once('request\api.php');
+if (isset($_GET['champ'])) {
+    $champ = $_GET['champ'];
+} else {
+    header("Location: champions.php");
+    exit();
+}
 ?>
 
 <title>League Data - Champion</title>
@@ -69,16 +69,16 @@
 
         <div class="champ_espaco">
             <div class="champ_logo">
-                <?php echo "<img src='https://ddragon.leagueoflegends.com/cdn/14.8.1/img/champion/$champ.png' alt='img_champ' id='img_champ_logo'>"?>
+                <?php echo "<img src='https://ddragon.leagueoflegends.com/cdn/14.8.1/img/champion/$champ.png' alt='img_champ' id='img_champ_logo'>" ?>
             </div>
             <div class="champ_name">
-                <?php 
-                    echo "<p id='p_1'>$champ</p>";
-                    $api_request = new API();
-                    $title = $api_request->champion_data($champ, 'title', 'pt_BR');
-                    echo "<p id='p_2'>$title</p>";  
+                <?php
+                echo "<p id='p_1'>$champ</p>";
+                $api_request = new API();
+                $title = $api_request->champion_data($champ, 'title', 'pt_BR');
+                echo "<p id='p_2'>$title</p>";
                 ?>
-                
+
             </div>
         </div>
 
@@ -146,19 +146,19 @@
                 <div class="slider-wrapper">
                     <div class="slider">
                         <?php
-                            $champskins = $api_request->skins($champ);
-                            $count = 1;
-                            foreach($champskins as $skin){
-                                echo "<img src='$skin[skinUrl]' alt='$skin[skinName]' id='slide-$count'>";
-                                $count++;
-                            };
+                        $champskins = $api_request->skins($champ);
+                        $count = 1;
+                        foreach ($champskins as $skin) {
+                            echo "<img src='$skin[skinUrl]' alt='$skin[skinName]' id='slide-$count'>";
+                            $count++;
+                        };
                         ?>
                     </div>
                     <div class="slider-nav">
                         <?php
-                            for($c = 1; $c < $count; $c++){
-                                echo "<a href='#slide-$c'>";
-                            };
+                        for ($c = 1; $c < $count; $c++) {
+                            echo "<a href='#slide-$c'>";
+                        };
                         ?>
                     </div>
                 </div>
@@ -174,6 +174,26 @@
         </div>
 
     </div>
+
+    <div class="gtranslate_wrapper"></div>
+    <script>
+        window.gtranslateSettings = {
+            "default_language": "pt",
+            "native_language_names": true,
+            "languages": ["pt", "en", "ja", "ko", "it", "es"],
+            "globe_color": "#66aaff",
+            "wrapper_selector": ".gtranslate_wrapper",
+            "flag_size": 16,
+            "horizontal_position": "right",
+            "vertical_position": "bottom",
+            "alt_flags": {
+                "en": "usa",
+                "pt": "brazil"
+            },
+            "globe_size": 40
+        }
+    </script>
+    <script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
 
 </div>
 <script src="js\champion.js"></script>
