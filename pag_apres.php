@@ -33,7 +33,7 @@
   <div id="titulo"></div>
 
   <div class="titulo">
-    <h2>Funções do Site</h2>
+    <h2>Colaboradores</h2>
   </div>
 
 
@@ -42,119 +42,55 @@
   <section class="section_cards">
     <div class="div_cartas">
 
-      <div class="container noselect">
-        <div class="canvas">
-          <div class="tracker tr-1"></div>
-          <div class="tracker tr-2"></div>
-          <div class="tracker tr-3"></div>
-          <div class="tracker tr-4"></div>
-          <div class="tracker tr-5"></div>
-          <div class="tracker tr-6"></div>
-          <div class="tracker tr-7"></div>
-          <div class="tracker tr-8"></div>
-          <div class="tracker tr-9"></div>
-          <div class="tracker tr-10"></div>
-          <div class="tracker tr-11"></div>
-          <div class="tracker tr-12"></div>
-          <div class="tracker tr-13"></div>
-          <div class="tracker tr-14"></div>
-          <div class="tracker tr-15"></div>
-          <div class="tracker tr-16"></div>
-          <div class="tracker tr-17"></div>
-          <div class="tracker tr-18"></div>
-          <div class="tracker tr-19"></div>
-          <div class="tracker tr-20"></div>
-          <div class="tracker tr-21"></div>
-          <div class="tracker tr-22"></div>
-          <div class="tracker tr-23"></div>
-          <div class="tracker tr-24"></div>
-          <div class="tracker tr-25"></div>
-          <div id="card">
-            <p id="prompt"><i class="bi bi-arrow-down"></i></p>
-            <div class="title">Amostra de todos <br>os campeões de <br>League Of Legends</div>
-            <div class="subtitle">
-              Champs
-            </div>
-
-          </div>
+      <div class="card">
+        <div class="img">
+          <img src="img/jinx_logo.jpg" alt="" id="img_jinx">
         </div>
+        <span>Most Magic</span>
+        <p class="info">
+          I’m Walter, a multidisciplinary designer who focuses on telling my clients’
+          stories visually, through enjoyable and meaningful experiences. I specialize
+          in responsive websites and functional user interfaces.
+        </p>
+        <div class="share">
+          <a href="https://www.leagueofgraphs.com/pt/summoner/br/TDI+Most+Magic-BR1"><p id="riot_id">Riot ID: TDI Most Magic#BR1</p></a>
+        </div>
+        <button><a href="https://github.com/MostMagic" id="github_a">Github</a></button>
       </div>
 
-      <div class="container noselect">
-        <div class="canvas">
-          <div class="tracker tr-1"></div>
-          <div class="tracker tr-2"></div>
-          <div class="tracker tr-3"></div>
-          <div class="tracker tr-4"></div>
-          <div class="tracker tr-5"></div>
-          <div class="tracker tr-6"></div>
-          <div class="tracker tr-7"></div>
-          <div class="tracker tr-8"></div>
-          <div class="tracker tr-9"></div>
-          <div class="tracker tr-10"></div>
-          <div class="tracker tr-11"></div>
-          <div class="tracker tr-12"></div>
-          <div class="tracker tr-13"></div>
-          <div class="tracker tr-14"></div>
-          <div class="tracker tr-15"></div>
-          <div class="tracker tr-16"></div>
-          <div class="tracker tr-17"></div>
-          <div class="tracker tr-18"></div>
-          <div class="tracker tr-19"></div>
-          <div class="tracker tr-20"></div>
-          <div class="tracker tr-21"></div>
-          <div class="tracker tr-22"></div>
-          <div class="tracker tr-23"></div>
-          <div class="tracker tr-24"></div>
-          <div class="tracker tr-25"></div>
-          <div id="card">
-            <p id="prompt"><i class="bi bi-arrow-down"></i></p>
-            <div class="title">Database de todos<br> os campeões e<br> invocadores com <br>suas informações</div>
-            <div class="subtitle">
-              League Data
-            </div>
-
-          </div>
+      <div class="card">
+        <div class="img">
+          <img src="img/sona_logo.jpg" alt="" id="img_sona">
         </div>
+        <span>Shiro</span>
+        <p class="info">
+          I’m Walter, a multidisciplinary designer who focuses on telling my clients’
+          stories visually, through enjoyable and meaningful experiences. I specialize
+          in responsive websites and functional user interfaces.
+        </p>
+        <div class="share">
+          <a href="https://www.leagueofgraphs.com/pt/summoner/br/%E3%82%B7%E3%83%A0%E3%83%BC%E3%83%B3-0001"><p id="riot_id">Riot ID: シムーン#0001</p></a>
+        </div>
+        <button><a href="https://github.com/Simonfilipes" id="github_a">Github</a></button>
       </div>
 
-      <div class="container noselect">
-        <div class="canvas">
-          <div class="tracker tr-1"></div>
-          <div class="tracker tr-2"></div>
-          <div class="tracker tr-3"></div>
-          <div class="tracker tr-4"></div>
-          <div class="tracker tr-5"></div>
-          <div class="tracker tr-6"></div>
-          <div class="tracker tr-7"></div>
-          <div class="tracker tr-8"></div>
-          <div class="tracker tr-9"></div>
-          <div class="tracker tr-10"></div>
-          <div class="tracker tr-11"></div>
-          <div class="tracker tr-12"></div>
-          <div class="tracker tr-13"></div>
-          <div class="tracker tr-14"></div>
-          <div class="tracker tr-15"></div>
-          <div class="tracker tr-16"></div>
-          <div class="tracker tr-17"></div>
-          <div class="tracker tr-18"></div>
-          <div class="tracker tr-19"></div>
-          <div class="tracker tr-20"></div>
-          <div class="tracker tr-21"></div>
-          <div class="tracker tr-22"></div>
-          <div class="tracker tr-23"></div>
-          <div class="tracker tr-24"></div>
-          <div class="tracker tr-25"></div>
-          <div id="card">
-            <p id="prompt"><i class="bi bi-arrow-down"></i></p>
-            <div class="title">Três Jogos de<br> adivinhação, teste<br> sua memoria e seu<br> conhecimento no LoL</div>
-            <div class="subtitle">
-              Loldle
-            </div>
-
-          </div>
+      <div class="card">
+        <div class="img">
+          <img src="img/kayn_logo.jpg" alt="" id="img_kayn">
         </div>
+        <span>Vouto</span>
+        <p class="info">
+          I’m Walter, a multidisciplinary designer who focuses on telling my clients’
+          stories visually, through enjoyable and meaningful experiences. I specialize
+          in responsive websites and functional user interfaces.
+        </p>
+        <div class="share">
+          <a href="https://www.leagueofgraphs.com/pt/summoner/br/love+darkless-KR2"><p id="riot_id">Riot ID: love darkless#KR2</p></a>
+        </div>
+        <button><a href="https://github.com/andradavic" id="github_a">Github</a></button>
       </div>
+
+
 
     </div>
 
