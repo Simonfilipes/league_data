@@ -53,7 +53,9 @@
           in responsive websites and functional user interfaces.
         </p>
         <div class="share">
-          <a href="https://www.leagueofgraphs.com/pt/summoner/br/TDI+Most+Magic-BR1"><p id="riot_id">Riot ID: TDI Most Magic#BR1</p></a>
+          <a href="https://www.leagueofgraphs.com/pt/summoner/br/TDI+Most+Magic-BR1">
+            <p id="riot_id">Riot ID: TDI Most Magic#BR1</p>
+          </a>
         </div>
         <button><a href="https://github.com/MostMagic" id="github_a">Github</a></button>
       </div>
@@ -69,7 +71,9 @@
           in responsive websites and functional user interfaces.
         </p>
         <div class="share">
-          <a href="https://www.leagueofgraphs.com/pt/summoner/br/%E3%82%B7%E3%83%A0%E3%83%BC%E3%83%B3-0001"><p id="riot_id">Riot ID: シムーン#0001</p></a>
+          <a href="https://www.leagueofgraphs.com/pt/summoner/br/%E3%82%B7%E3%83%A0%E3%83%BC%E3%83%B3-0001">
+            <p id="riot_id">Riot ID: シムーン#0001</p>
+          </a>
         </div>
         <button><a href="https://github.com/Simonfilipes" id="github_a">Github</a></button>
       </div>
@@ -85,7 +89,9 @@
           in responsive websites and functional user interfaces.
         </p>
         <div class="share">
-          <a href="https://www.leagueofgraphs.com/pt/summoner/br/love+darkless-KR2"><p id="riot_id">Riot ID: love darkless#KR2</p></a>
+          <a href="https://www.leagueofgraphs.com/pt/summoner/br/love+darkless-KR2">
+            <p id="riot_id">Riot ID: love darkless#KR2</p>
+          </a>
         </div>
         <button><a href="https://github.com/andradavic" id="github_a">Github</a></button>
       </div>
@@ -100,6 +106,30 @@
 
     <!-- CARDS -->
   </section>
+
+  <div class="div_espacamento_card">
+
+  </div>
+
+  <div class="gtranslate_wrapper"></div>
+  <script>
+    window.gtranslateSettings = {
+      "default_language": "pt",
+      "native_language_names": true,
+      "languages": ["pt", "en", "ja", "ko", "it", "es"],
+      "globe_color": "#66aaff",
+      "wrapper_selector": ".gtranslate_wrapper",
+      "flag_size": 16,
+      "horizontal_position": "left",
+      "vertical_position": "bottom",
+      "alt_flags": {
+        "en": "usa",
+        "pt": "brazil"
+      },
+      "globe_size": 40
+    }
+  </script>
+  <script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
 
 </body>
 

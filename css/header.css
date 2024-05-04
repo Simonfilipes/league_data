@@ -19,10 +19,8 @@ body{
 #League_Data {
   width: 100%;
   height: 50px;
-  margin-top: -10px;
   transition: .2s ease;
   position: relative;
-  animation: flutuar 2s ease-in-out infinite alternate;
 }
 
 @keyframes flutuar {

@@ -1,5 +1,11 @@
 /* CARDS INICIO */
 
+.div_espacamento_card{
+  width: 70px;
+  height: 70px;
+  background: rgb(3, 3, 17);
+}
+
 .titulo {
   color: white;
   font-size: 35px;
@@ -8,7 +14,7 @@
 }
 
 .div_cartas {
-  margin: 70px 0px 50px 0px;
+  margin: 70px 0px 0px 0px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -25,7 +31,7 @@
 #img_sona{
   width: 4.8em;
   height: 4.8em;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0px 0px 15px #000000;
   margin: auto;
 }
@@ -33,7 +39,7 @@
 #img_jinx{
   width: 4.8em;
   height: 4.8em;
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 0px 0px 15px #000000;
   margin: auto;
 }
@@ -41,7 +47,7 @@
 #img_kayn{
   width: 4.8em;
   height: 4.8em;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0px 0px 15px #000000;
   margin: auto;
 }
@@ -56,7 +62,7 @@
 .card {
   width: 17em;
   height: 22.5em;
-  background: #171717;
+  background: #0f1923;
   transition: 1s ease-in-out;
   clip-path: polygon(
     30px 0%,
@@ -70,6 +76,13 @@
   border-bottom-left-radius: 20px;
   display: flex;
   flex-direction: column;
+  transition: .2s ease;
+}
+
+.card:hover {
+  transform: scale(1.10);
+  background: rgb(3, 3, 17);
+  border: 0.5px solid white;
 }
 
 .card span {
@@ -102,7 +115,7 @@
 .card .img {
   width: 4.8em;
   height: 4.8em;
-  background: white;
+  background: rgb(7, 7, 7);
   border-radius: 15px;
   margin: auto;
 }
