@@ -3,8 +3,9 @@
     include_once('request\api.php');
     if (isset($_GET['champ'])) {
         $champ = $_GET['champ'];
-    } else {
-        // echo 'deu ruim';
+    }else {
+        header("Location: champions.php");
+        exit();
     }
 ?>
 
