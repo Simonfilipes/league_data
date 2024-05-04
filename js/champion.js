@@ -5,8 +5,8 @@ async function champData(){
     champSpells = await axios.get(`request/getData.php?function_name=spells&champ_name=${champName}`);
     champPassive = await axios.get(`request/getData.php?function_name=passive&champ_name=${champName}`);
 
-    await getBuildDefault();
-    await redirect();
+    getBuildDefault();
+    redirect();
 }
 
 async function getBuildDefault(){
@@ -23,11 +23,11 @@ async function updateBuildByFilter(){
     champ_build = await axios.get(`request/getData.php?function_name=filterBuild&champ_name=${champName}&region=${region}&tier=${tier}&position=${position}`);
     champ_build = champ_build.data.pageProps;
 
-    console.log(champ_build);
     setRates(champ_build);
 }
 
 function setRates(champ_build){
+    console.log(champ_build.data)
     region = document.querySelector('#region');
     tier = document.querySelector('#tier');
     position = document.querySelector('#position');
