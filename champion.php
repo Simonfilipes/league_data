@@ -105,10 +105,18 @@
             <div class="tittle_runas">
                 <p>Runas</p>
             </div>
+
+            <div class="runes">
+
+            </div>
         </div>
         <div class="itens">
             <div class="tittle_itens">
                 <p>Build</p>
+            </div>
+
+            <div class="builds">
+                
             </div>
         </div>
 
