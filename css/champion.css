@@ -102,7 +102,7 @@
 }
 
 .box_area_4{
-    width: 645px;
+    width: 48.2%;
     height: max-content;
     border: 1px solid white;
     margin: 0px 0px 15px 15px;
@@ -139,6 +139,7 @@
 }
 
 .area_skins{
+    width: 48.2%;
     height: max-content;
     border: 1px solid white;
     margin: 0px 0px 30px 15px;
@@ -183,7 +184,7 @@
 
 .slider-wrapper {
 	position: relative;
-	max-width: 40.6rem;
+	max-width: 1000rem;
 	margin: 0 auto;
 }
 
