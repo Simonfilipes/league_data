@@ -74,7 +74,7 @@
 
 .runas{
     width: 48.2%;
-    height: 500px;
+    height: max-content;
     border: 1px solid white;
     margin: 10px 0px 15px 15px;
     border-radius: 5px;
@@ -82,7 +82,8 @@
 
 .itens{
     width: 48.2%;
-    height: 500px;
+    height: max-content;
+    padding: 10px;
     border: 1px solid white;
     margin: 10px 0px 15px 15px;
     border-radius: 5px;
@@ -230,4 +231,47 @@
 
 .slider-nav a:hover {
 	opacity: 1;
+}
+
+#rune{
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.runes{
+    justify-content: center;
+}
+
+.runes, .primary_rune, .secondary_rune, .statsmod, .runes > div, .skills, .skill{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.primary_rune, .secondary_rune, .statsmod{
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    gap: 4px;
+}
+.runes > div{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.skills, .skill{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.skills{
+    gap: 10px;
+}
+
+.skill{
+    flex-direction: column;
+}
+
+#skills, #seta{
+    color: white;
 }

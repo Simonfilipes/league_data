@@ -107,7 +107,19 @@ if (isset($_GET['champ'])) {
             </div>
 
             <div class="runes">
+                <div class="primary_rune">
 
+                </div>
+
+                <div>
+                    <div class="secondary_rune">
+
+                    </div>
+                    <div class="statsmod">
+
+                    </div>
+                </div>
+                
             </div>
         </div>
         <div class="itens">
@@ -117,7 +129,13 @@ if (isset($_GET['champ'])) {
 
             <div class="builds">
 
+                
             </div>
+
+            <div class="skills">
+
+            </div>
+
         </div>
 
     </div>

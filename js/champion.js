@@ -45,28 +45,31 @@ async function setRates(champ_build){
     banrate.textContent = ((champ_build.data.trends.ban[0].rate )* 100).toFixed(2) + "%";
     winrate.textContent = ((champ_build.data.trends.win[0].rate )* 100).toFixed(2) + "%";
 
-    runes = document.querySelector('.runes');
-    setRunes(champ_build, runes);
+    primary = document.querySelector('.primary_rune');
+    secondary = document.querySelector('.secondary_rune');
+    statsmods = document.querySelector('.statsmod');
+    setRunes(champ_build, primary, secondary, statsmods);
 
 
     builds = document.querySelector('.builds');
-    starterItems(champ_build, builds)
+    items(champ_build, builds)
+
+    divSkills = document.querySelector('.skills');
+    skillOrder(champ_build, divSkills);
     
+    console.log(champ_build)
 }
 
-function setItems(items){
-
-}
-
-function starterItems(champ_build, builds){
+function items(champ_build, builds){
     let result = '';
-    let champ_items = champ_build.data.core_items;
-
-    console.log(champ_items)
-
-    for(let c = 0; c < 4; c++){
-        for(let id of champ_items[c].ids){
-            result += `<img src="https://ddragon.leagueoflegends.com/cdn/${version}/img/item/${id}.png" alt="${champ_items[c]}">`
+    let coreItems = champ_build.data.core_items;
+    let boots = champ_build.data.boots;
+    let starterItems = champ_build.data.starter_items;
+    let list = [starterItems, boots, coreItems];
+    
+    for(let item of list){
+        for(let id of item[0].ids){
+            result += `<img id="item" src="https://ddragon.leagueoflegends.com/cdn/${version}/img/item/${id}.png" alt="${item[0]}">`;
         }
         result += '<br>'
     }
@@ -74,22 +77,60 @@ function starterItems(champ_build, builds){
     builds.innerHTML = result;
 }
 
-function setRunes(champ_build, runes){
+function skillOrder(champ_build, divSkills){
+    let result = '';
+    let skills = champ_build.data.skills[0];
+
+    for(let skill of skills.order){
+        result += `<span id="seta"> -> </span>`
+        let img;
+
+        switch(skill){
+            case 'Q':
+                img = `<img src='https://ddragon.leagueoflegends.com/cdn/${version}/img/spell/${champSpells.data[0].image.full}' alt='${champName} passive'>`
+                break;
+            
+            case 'W':
+                img= `<img src='https://ddragon.leagueoflegends.com/cdn/${version}/img/spell/${champSpells.data[1].image.full}' alt='${champName} passive'>`
+                break;
+
+            case 'E':
+                img = `<img src='https://ddragon.leagueoflegends.com/cdn/${version}/img/spell/${champSpells.data[2].image.full}' alt='${champName} passive'>`
+                break;
+
+            case 'R':
+                img = `<img src='https://ddragon.leagueoflegends.com/cdn/${version}/img/spell/${champSpells.data[3].image.full}' alt='${champName} passive'>`
+                break;
+        }
+
+        result += `
+            <div class='skill'>
+                ${img}
+                <span id='skills'>${skill}</span>
+            </div>
+        `;
+    }
+    
+    divSkills.innerHTML = result;
+}
+
+function setRunes(champ_build, primary, secondary, statmod){
     champRunes = champ_build.data.rune_pages[0].builds[0];
 
-    runes.innerHTML = runePages(champRunes.primary_page_id, champ_build.data.meta.runePages)
+    primary.innerHTML = runePages(champRunes.primary_page_id, champ_build.data.meta.runePages)
 
-    runes.innerHTML += runePages(champRunes.primary_rune_ids, champ_build.data.meta.runes)
+    primary.innerHTML += runePages(champRunes.primary_rune_ids, champ_build.data.meta.runes)
 
-    runes.innerHTML += runePages(champRunes.secondary_page_id, champ_build.data.meta.runePages)
+    secondary.innerHTML = runePages(champRunes.secondary_page_id, champ_build.data.meta.runePages)
 
-    runes.innerHTML += runePages(champRunes.secondary_rune_ids, champ_build.data.meta.runes)
+    secondary.innerHTML += runePages(champRunes.secondary_rune_ids, champ_build.data.meta.runes)
 
-    runes.innerHTML += runePages(champRunes.stat_mod_ids, champ_build.data.meta.statMods)
+    statmod.innerHTML = runePages(champRunes.stat_mod_ids, champ_build.data.meta.statMods)
 }
 
 function runePages(runes, links){
     let result = '';
+    
 
     if (!Array.isArray(runes)) {
         runes = [runes];
@@ -98,7 +139,7 @@ function runePages(runes, links){
     for(let rune of runes){
         for(let link of links){
             if(link.id == rune){
-                result += `<img src="${link.image_url}" alt="${link.name}">`
+                result += `<img id="rune" src="${link.image_url}" alt="${link.name}">`
                 break
             }
         }

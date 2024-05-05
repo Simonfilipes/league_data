@@ -9,8 +9,8 @@
             $this->champions_url = "https://ddragon.leagueoflegends.com/cdn/$version/data/en_US/champion.json";
             $this->champion_url = "https://ddragon.leagueoflegends.com/cdn/$version/data/%s/champion/%s.json";
             $this->splash_url = "https://ddragon.leagueoflegends.com/cdn/img/champion/splash/%s_%d.jpg";
-            $this->build_champ_by_filter = "https://www.op.gg/_next/data/QKgrk0_DNf7Prx1LSbO95/en_US/champions/%s/build/%s.json?region=%s&champion=%s&position=%s&tier=%s";
-            $this->build_champ = "https://www.op.gg/_next/data/QKgrk0_DNf7Prx1LSbO95/en_US/champions/%s/build.json?champion=%s";
+            $this->build_champ_by_filter = "https://www.op.gg/_next/data/mznOdypm3-UQHCjDiTIGd/en_US/champions/%s/build/%s.json?region=%s&champion=%s&position=%s&tier=%s";
+            $this->build_champ = "https://www.op.gg/_next/data/mznOdypm3-UQHCjDiTIGd/en_US/champions/%s/build.json?champion=%s";
 
             $this->options = [
                 'http' => [
