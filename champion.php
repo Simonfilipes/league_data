@@ -123,69 +123,66 @@ if (isset($_GET['champ'])) {
     </div>
 
 
-    <div class="div_centralizar_area_4_e_5">
+    <div class="centralizar_area_4_e_skins">
 
+        <div class="box_area_4">
+            <select name="lane" class="select_area_4" id="skills" onchange=redirect()>
+                <option value="p">Habilidade - P</option>
+                <option value="q">Habilidade - Q</option>
+                <option value="w">Habilidade - W</option>
+                <option value="e">Habilidade - E</option>
+                <option value="r">Habilidade - R</option>
+            </select>
 
-        <div class="centralizar_area_4_e_skins">
+            <div class="champSpells">
 
-            <div class="box_area_4">
-                <select name="lane" class="select_area_4" id="skills" onchange=redirect()>
-                    <option value="p">Habilidade - P</option>
-                    <option value="q">Habilidade - Q</option>
-                    <option value="w">Habilidade - W</option>
-                    <option value="e">Habilidade - E</option>
-                    <option value="r">Habilidade - R</option>
-                </select>
-
-                <div class="champSpells">
-
-                </div>
             </div>
-
-            <section class="container area_skins">
-                <div class="slider-wrapper">
-                    <div class="slider">
-                        <?php
-                        $champskins = $api_request->skins($champ);
-                        $count = 1;
-                        foreach ($champskins as $skin) {
-                            echo "<img src='$skin[skinUrl]' alt='$skin[skinName]' id='slide-$count'>";
-                            $count++;
-                        };
-                        ?>
-                    </div>
-                    <div class="slider-nav">
-                        <?php
-                        for ($c = 1; $c < $count; $c++) {
-                            echo "<a href='#slide-$c'>";
-                        };
-                        ?>
-                    </div>
-                </div>
-            </section>
         </div>
 
+        <section class="container area_skins">
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <?php
+                    $champskins = $api_request->skins($champ);
+                    $count = 1;
+                    foreach ($champskins as $skin) {
+                        echo "<img src='$skin[skinUrl]' alt='$skin[skinName]' id='slide-$count'>";
+                        $count++;
+                    };
+                    ?>
+                </div>
+                <div class="slider-nav">
+                    <?php
+                    for ($c = 1; $c < $count; $c++) {
+                        echo "<a href='#slide-$c'>";
+                    };
+                    ?>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <div class="gtranslate_wrapper"></div>
-    <script>
-        window.gtranslateSettings = {
-            "default_language": "pt",
-            "native_language_names": true,
-            "languages": ["pt", "en", "ja", "ko", "it", "es"],
-            "globe_color": "#66aaff",
-            "wrapper_selector": ".gtranslate_wrapper",
-            "flag_size": 16,
-            "horizontal_position": "right",
-            "vertical_position": "bottom",
-            "alt_flags": {
-                "en": "usa",
-                "pt": "brazil"
-            },
-            "globe_size": 40
-        }
-    </script>
-    <script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
+</div>
+
+<div class="gtranslate_wrapper"></div>
+<script>
+    window.gtranslateSettings = {
+        "default_language": "pt",
+        "native_language_names": true,
+        "languages": ["pt", "en", "ja", "ko", "it", "es"],
+        "globe_color": "#66aaff",
+        "wrapper_selector": ".gtranslate_wrapper",
+        "flag_size": 16,
+        "horizontal_position": "right",
+        "vertical_position": "bottom",
+        "alt_flags": {
+            "en": "usa",
+            "pt": "brazil"
+        },
+        "globe_size": 40
+    }
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
 
 </div>
 <script src="js\champion.js"></script>
