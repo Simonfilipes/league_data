@@ -101,7 +101,7 @@
 }
 
 .box_area_4{
-    width: 98%;
+    width: 645px;
     height: max-content;
     border: 1px solid white;
     margin: 0px 0px 15px 15px;
@@ -138,7 +138,6 @@
 }
 
 .area_skins{
-    width: 98%;
     height: max-content;
     border: 1px solid white;
     margin: 0px 0px 30px 15px;
@@ -147,8 +146,7 @@
 
 .centralizar_area_4_e_skins{
     display: flex;
-    flex-direction: column;
-    width: 49.3%
+    flex-direction: row;
 }
 
 #skill_img{
@@ -177,10 +175,14 @@
     padding: 10px;
 }
 
+.builds{
+    margin: 30px;
+    gap: 100px;
+}
 
 .slider-wrapper {
 	position: relative;
-	max-width: 48rem;
+	max-width: 40.6rem;
 	margin: 0 auto;
 }
 

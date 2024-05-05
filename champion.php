@@ -116,7 +116,7 @@ if (isset($_GET['champ'])) {
             </div>
 
             <div class="builds">
-                
+
             </div>
         </div>
 
@@ -163,14 +163,6 @@ if (isset($_GET['champ'])) {
                     </div>
                 </div>
             </section>
-        </div>
-
-        <div class="box_area_5">
-
-            <div class="tittle_matchups">
-                Matchups
-            </div>
-
         </div>
 
     </div>
