@@ -25,6 +25,10 @@
             case 'build':
                 echo json_encode($api->championBuildData($_GET['champ_name']));
                 break;
+
+            case 'champs':
+                echo json_encode($api->champions());
+                break;
             default:
                 echo "Função desconhecida";
         }

@@ -13,8 +13,10 @@
 
 nav {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: column;
   gap: 50px;
+  position: relative;
   float: right;
   margin-right: 20px;
   color: rgb(255, 255, 255);
