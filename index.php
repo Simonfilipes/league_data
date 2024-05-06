@@ -17,25 +17,7 @@
       <img src="img\banner.png" alt="" srcset="">
     </div>
     <div class="search_bar">
-      <select name="region" id="region" class="notranslate">
-        <option value="BR">BR</option>
-        <option value="NA">NA</option>
-        <option value="EUW">EUW</option>
-        <option value="EUN">EUN</option>
-        <option value="KR">KR</option>
-        <option value="JP">JP</option>
-        <option value="RU">RU</option>
-        <option value="OCE">OCE</option>
-        <option value="TR">TR</option>
-        <option value="LAN">LAN</option>
-        <option value="LAS">LAS</option>
-        <option value="PH">PH</option>
-        <option value="SG">SG</option>
-        <option value="TH">TH</option>
-        <option value="TW">TW</option>
-        <option value="VN">VN</option>
-      </select>
-      <input type="text" placeholder='Pesquise pelo campeão ou pelo seu perfil de invocador' id="search_input">
+      <input type="text" placeholder='Pesquise pelo campeão' id="search_input">
       <svg viewBox="0 0 20 20" aria-hidden="true" style='max-height: 40px;' id="svg">
         <path d="M16.72 17.78a.75.75 0 1 0 1.06-1.06l-1.06 1.06ZM9 14.5A5.5 5.5 0 0 1 3.5 9H2a7 7 0 0 0 7 7v-1.5ZM3.5 9A5.5 5.5 0 0 1 9 3.5V2a7 7 0 0 0-7 7h1.5ZM9 3.5A5.5 5.5 0 0 1 14.5 9H16a7 7 0 0 0-7-7v1.5Zm3.89 10.45 3.83 3.83 1.06-1.06-3.83-3.83-1.06 1.06ZM14.5 9a5.48 5.48 0 0 1-1.61 3.89l1.06 1.06A6.98 6.98 0 0 0 16 9h-1.5Zm-1.61 3.89A5.48 5.48 0 0 1 9 14.5V16a6.98 6.98 0 0 0 4.95-2.05l-1.06-1.06Z"></path>
       </svg>

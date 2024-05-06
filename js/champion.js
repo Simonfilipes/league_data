@@ -121,7 +121,6 @@ async function setRunes(champ_build, primary, secondary, statmod) {
     statmod.innerHTML = await runePages(champRunes.stat_mod_ids, champ_build.data.meta.statMods)
 }
 
-
 async function runePages(runes, links) {
     let result = '';
 
@@ -140,10 +139,8 @@ async function runePages(runes, links) {
     return result;
 }
 
-
 async function redirect() {
     const selectValue = document.getElementById('skillsDesciption').value;
-    console.log(selectValue);
     const divContent = document.querySelector('.champSpells');
 
     switch (selectValue) {
