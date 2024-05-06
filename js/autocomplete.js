@@ -1,5 +1,6 @@
 let champions_list = [];
 
+
 // Obtenha a largura computada do primeiro elemento
 var larguraElemento1 = document.querySelector('.search_bar').offsetWidth;
 

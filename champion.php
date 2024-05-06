@@ -144,13 +144,14 @@ if (isset($_GET['champ'])) {
     <div class="centralizar_area_4_e_skins">
 
         <div class="box_area_4">
-            <select name="lane" class="select_area_4" id="skills" onchange=redirect()>
+            <select name="lane" class="select_area_4" id="skillsDesciption" onchange="redirect()">
                 <option value="p">Habilidade - P</option>
                 <option value="q">Habilidade - Q</option>
                 <option value="w">Habilidade - W</option>
                 <option value="e">Habilidade - E</option>
                 <option value="r">Habilidade - R</option>
             </select>
+
 
             <div class="champSpells">
 
