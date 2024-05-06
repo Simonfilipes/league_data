@@ -171,4 +171,26 @@ async function redirect() {
     }
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const builds = document.querySelector('.builds');
+    const runes = document.querySelector('.runes');
+
+    // Função para verificar e remover os loaders
+    function checkAndRemoveLoader() {
+        const buildHeight = builds.clientHeight;
+        const runesHeight = runes.clientHeight;
+
+        if (buildHeight > 200 && runesHeight > 200) {
+            const loaders = document.querySelectorAll('.spinner');
+            loaders.forEach(loader => {
+                loader.style.display = 'none'; // Oculta o loader
+            });
+            clearInterval(checkInterval);
+        }
+    }
+
+    // Verifica periodicamente se as seções atingiram 500px de altura
+    const checkInterval = setInterval(checkAndRemoveLoader, 100); // Verifica a cada 100ms
+});
+
 champData();

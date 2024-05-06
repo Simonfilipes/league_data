@@ -12,6 +12,7 @@ if (isset($_GET['champ'])) {
 <title>League Data - Champion</title>
 
 <link rel="stylesheet" href="css/champion.css">
+<link rel="stylesheet" href="css\loader.css">
 
 <div class="champ_box">
 
@@ -85,15 +86,15 @@ if (isset($_GET['champ'])) {
         <div class="rate_espaco">
             <div class="win_rate">
                 <p id="rate_1">Win Rate</p>
-                <p id="winrate">54,37%</p>
+                <p id="winrate">666,666%</p>
             </div>
             <div class="pick_rate">
                 <p id="rate_1">Pick Rate</p>
-                <p id="pickrate">4.24%</p>
+                <p id="pickrate">666.666%</p>
             </div>
             <div class="ban_rate">
                 <p id="rate_1">Ban Rate</p>
-                <p id="banrate">0.68%</p>
+                <p id="banrate">666.666%</p>
             </div>
         </div>
 
@@ -104,6 +105,9 @@ if (isset($_GET['champ'])) {
         <div class="runas">
             <div class="tittle_runas">
                 <p>Runas</p>
+                <div class="spinner" id="load_1">
+                    <div class="spinner1"></div>
+                </div>
             </div>
 
             <div class="runes">
@@ -119,17 +123,19 @@ if (isset($_GET['champ'])) {
 
                     </div>
                 </div>
-                
+
             </div>
         </div>
         <div class="itens">
             <div class="tittle_itens">
                 <p>Build</p>
+                <div class="spinner" id="load_2">
+                    <div class="spinner1"></div>
+                </div>
             </div>
 
             <div class="builds">
 
-                
             </div>
 
             <div class="skills">
@@ -184,24 +190,24 @@ if (isset($_GET['champ'])) {
 </div>
 
 <div class="gtranslate_wrapper"></div>
-  <script>
+<script>
     window.gtranslateSettings = {
-      "default_language": "pt",
-      "native_language_names": true,
-      "languages": ["pt", "en", "ja", "ko", "it", "es"],
-      "globe_color": "#66aaff",
-      "wrapper_selector": ".gtranslate_wrapper",
-      "flag_size": 16,
-      "horizontal_position": "left",
-      "vertical_position": "bottom",
-      "alt_flags": {
-        "en": "usa",
-        "pt": "brazil"
-      },
-      "globe_size": 40
+        "default_language": "pt",
+        "native_language_names": true,
+        "languages": ["pt", "en", "ja", "ko", "it", "es"],
+        "globe_color": "#66aaff",
+        "wrapper_selector": ".gtranslate_wrapper",
+        "flag_size": 16,
+        "horizontal_position": "left",
+        "vertical_position": "bottom",
+        "alt_flags": {
+            "en": "usa",
+            "pt": "brazil"
+        },
+        "globe_size": 40
     }
-  </script>
-  <script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
+</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
 
 </div>
 <script src="js\champion.js"></script>

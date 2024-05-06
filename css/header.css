@@ -23,36 +23,8 @@ body{
   position: relative;
 }
 
-@keyframes flutuar {
-  0% {
-    top: 0px;
-  }
-
-  100% {
-    top: -10px;
-  }
-
-}
-
-nav {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-  float: right;
-  margin-right: 20px;
-  color: rgb(255, 255, 255);
-}
-
-nav a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  transition: 0.2s ease;
-}
-
-nav a:hover {
+#League_Data:hover {
   transform: scale(1.10);
-  color: rgb(255, 255, 255);
-  text-decoration: underline;
 }
 
 #translate_icon {
@@ -87,15 +59,6 @@ nav a:hover {
   opacity: 100%;
 }
 
-.svgIcon {
-  width: 12px;
-  transition-duration: 0.3s;
-}
-
-.svgIcon path {
-  fill: white;
-}
-
 .button_header:hover {
   width: 140px;
   border-radius: 50px;
@@ -105,47 +68,11 @@ nav a:hover {
   align-items: center;
 }
 
-#feedback_a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-}
-
-.button_header:hover .svgIcon {
-  /* width: 20px; */
-  transition-duration: 0.3s;
-  transform: translateY(-200%);
-}
-
-.button_header::before {
-  position: absolute;
-  bottom: -20px;
-  content: "Champs";
-  color: rgb(0, 0, 0);
-  /* transition-duration: .3s; */
-  font-size: 0px;
-}
-
-.button_header:hover::before {
-  font-size: 13px;
-  opacity: 0;
-  bottom: unset;
-  /* transform: translateY(-30px); */
-  transition-duration: 0.3s;
-}
-
 #champ_logo {
   width: 65px;
   height: 65px;
 }
 
-@media screen and (max-width: 1000px) {
-  nav {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
-}
 
 @media screen and (max-width: 700px) {
   nav {
@@ -164,15 +91,6 @@ nav a:hover {
     font-size: 16px;
   }
 
-  .button_header:hover {
-    width: 50px;
-    border-radius: 15px;
-    transition-duration: 0.3s;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0px 0px 8px white;
-    align-items: center;
-  }
-
   .button_header::before {
     position: absolute;
     bottom: -20px;
@@ -185,6 +103,15 @@ nav a:hover {
   .nav_div {
     margin: 35px 0px 0px 25px;
     font-size: 20px;
+  }
+
+  .button_header:hover {
+    width: 60px;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+    background-color: rgb(7, 7, 48);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.267);
+    align-items: center;
   }
 
 }

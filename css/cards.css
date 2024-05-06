@@ -110,6 +110,7 @@
   text-align: center;
   font-size: 0.72em;
   margin: 1em;
+  gap: 10px;
 }
 
 .card .img {

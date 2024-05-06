@@ -19,7 +19,7 @@
         <h1>BEM VINDO AO <span id="spam_1">LEAGUE DATA</span><br> O <span>LEAGUE OF LEGENDS</span> NA <br>PALMA DE SUA
           MÃO</h1>
 
-        <button class="button"><span class="button_lg"><span class="button_sl"></span><span class="button_text" id="button_color"><a id=button_a href="#titulo">Funcionalidades do Site</a></span></span></button>
+        <button class="button"><span class="button_lg"><span class="button_sl"></span><span class="button_text" id="button_color"><a id=button_a href="#titulo">Créditos</a></span></span></button>
       </div>
       <div class="div_apresentacao_img">
         <img src="img/img_1.png" alt="img_1" id="img_1">
@@ -48,9 +48,8 @@
         </div>
         <span>Most Magic</span>
         <p class="info">
-          I’m Walter, a multidisciplinary designer who focuses on telling my clients’
-          stories visually, through enjoyable and meaningful experiences. I specialize
-          in responsive websites and functional user interfaces.
+          Mono Jinx<br>
+          Desenvolvedor Back End - 18 Anos<br>Suco Preferido: Cajú
         </p>
         <div class="share">
           <a href="https://www.leagueofgraphs.com/pt/summoner/br/TDI+Most+Magic-BR1">
@@ -66,9 +65,8 @@
         </div>
         <span>Shiro</span>
         <p class="info">
-          I’m Walter, a multidisciplinary designer who focuses on telling my clients’
-          stories visually, through enjoyable and meaningful experiences. I specialize
-          in responsive websites and functional user interfaces.
+          Sona Player<br>
+          Desenvolvedor Full Stack - 18 Anos<br>Suco Preferido: Maçã
         </p>
         <div class="share">
           <a href="https://www.leagueofgraphs.com/pt/summoner/br/%E3%82%B7%E3%83%A0%E3%83%BC%E3%83%B3-0001">
@@ -84,9 +82,8 @@
         </div>
         <span>Vouto</span>
         <p class="info">
-          I’m Walter, a multidisciplinary designer who focuses on telling my clients’
-          stories visually, through enjoyable and meaningful experiences. I specialize
-          in responsive websites and functional user interfaces.
+          Escravo do Meta<br>
+          Desenvolvedor Back End - 18 Anos<br>Suco Preferido: Uva
         </p>
         <div class="share">
           <a href="https://www.leagueofgraphs.com/pt/summoner/br/love+darkless-KR2">
