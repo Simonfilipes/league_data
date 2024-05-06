@@ -78,7 +78,7 @@
 }
 
 .itens{
-    width: 48.2%;
+    width: 46.5999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999%;
     padding: 10px;
     border: 1px solid white;
     margin: 10px 0px 15px 15px;
@@ -107,7 +107,7 @@
 
 .select_area_4{
     text-align: center;
-    width: 20%;
+    width: 40%;
     height: 30px;
     border-radius: 5px;
     margin: 30px 0px 0px 30px;
@@ -271,4 +271,83 @@
 
 #skills, #seta{
     color: white;
+}
+
+@media screen and (max-width: 1050px){
+    .area_3{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .runas{
+        width: 95%;
+        border: 1px solid white;
+        margin: 10px 0px 5px 15px;
+        border-radius: 5px;
+    }
+
+    .itens{
+        width: 95%;
+        padding: 0px;
+        border: 1px solid white;
+        margin: 5px 0px 10px 15px;
+        border-radius: 5px;
+    }
+
+    .area_skins{
+        width: 95%;
+        height: max-content;
+        border: 1px solid white;
+        margin: 0px 5px 30px 15px;
+        border-radius: 5px;
+    }
+
+    .centralizar_area_4_e_skins{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box_area_4{
+        width: 95%;
+        height: max-content;
+        border: 1px solid white;
+        margin: 0px 0px 15px 15px;
+        border-radius: 5px;
+    }
+
+    .area_2{
+        width: 95%;
+        border: 1px solid white;
+        margin: 30px 0px 0px 15px;
+        border-radius: 5px;
+    }
+
+    .slider-nav a {
+        width: 0.5rem;
+        height: 0.5rem;
+        border-radius: 50%;
+        background-color: #fff;
+        opacity: 0.75;
+        transition: opacity ease 250ms;
+    }
+
+    .slider-nav {
+        display: flex;
+        column-gap: 0.5rem;
+        position: absolute;
+        bottom: 1.25rem;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+    }
+
+    .select_area_4{
+        text-align: center;
+        width: 40%;
+        height: 30px;
+        border-radius: 5px;
+        margin: 30px 0px 0px 30px;
+        background-color: rgb(3, 3, 17);
+        color: white;
+    }
 }

@@ -1,5 +1,5 @@
 <?php
-include('header.php');
+include('header_champions.php');
 include_once('request\api.php');
 if (isset($_GET['champ'])) {
     $champ = $_GET['champ'];
@@ -184,24 +184,24 @@ if (isset($_GET['champ'])) {
 </div>
 
 <div class="gtranslate_wrapper"></div>
-<script>
+  <script>
     window.gtranslateSettings = {
-        "default_language": "pt",
-        "native_language_names": true,
-        "languages": ["pt", "en", "ja", "ko", "it", "es"],
-        "globe_color": "#66aaff",
-        "wrapper_selector": ".gtranslate_wrapper",
-        "flag_size": 16,
-        "horizontal_position": "right",
-        "vertical_position": "bottom",
-        "alt_flags": {
-            "en": "usa",
-            "pt": "brazil"
-        },
-        "globe_size": 40
+      "default_language": "pt",
+      "native_language_names": true,
+      "languages": ["pt", "en", "ja", "ko", "it", "es"],
+      "globe_color": "#66aaff",
+      "wrapper_selector": ".gtranslate_wrapper",
+      "flag_size": 16,
+      "horizontal_position": "left",
+      "vertical_position": "bottom",
+      "alt_flags": {
+        "en": "usa",
+        "pt": "brazil"
+      },
+      "globe_size": 40
     }
-</script>
-<script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
+  </script>
+  <script src="https://cdn.gtranslate.net/widgets/latest/globe.js" defer></script>
 
 </div>
 <script src="js\champion.js"></script>
